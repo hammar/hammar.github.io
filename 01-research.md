@@ -1,0 +1,31 @@
+---
+layout: page
+title: Research
+permalink: /research/
+---
+
+The first stage of my PhD project (in Swedish the Licentiate or PhL degree) concerned the development of quality criteria and associated quality indicators for Ontology Design Patterns. The latter half of my PhD project, currently in progress, concerns extending upon this work by developing methods and tooling to simplify the development and use of high-quality Ontology Design Patterns.
+
+Below you'll find some more information about my research contributions. You can also visit the [publications page](/publications/) for a full list of papers I've authored.
+
+## Invited talks
+
+* Speaker at [Ontology Summit 2014](http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2014) Track C: Overcoming Ontology Engineering Bottlenecks -- Strategies and Building Blocks. Title of the talk: "[Reasoning Performance Indicators for Ontology Design Patterns](http://ontolog.cim3.net/file/work/OntologySummit2014/2014-02-06_OntologySummit2014_Overcoming-Ontology-Engineering-Bottlenecks-1/OntologySummit2014_ODP-Reasoning-Indicators--KarlHammar_20140206.pdf)". Audio and transcripts available at [OntoLog](http://ontolog.cim3.net/cgi-bin/wiki.pl?ConferenceCall_2014_02_06).
+
+## Conferences and workshops
+* Chair of the [Workshop on Semantic Web Enterprise Adoption and Best Practice (WaSABi)](http://www.wasabi-ws.org/) at [ESWC 2014](http://2014.eswc-conferences.org/)
+* Chair of the [Workshop on Semantic Web Enterprise Adoption and Best Practice (WaSABi)](http://2013.wasabi-ws.org/) at [ISWC 2013](http://iswc2013.semanticweb.org/)
+* Pattern chair of the [Workshop on Ontology Patterns (WOP)](http://ontologydesignpatterns.org/wiki/WOP:2012) at [ISCW 2012](http://iswc2012.semanticweb.org/)
+
+## Research support
+* Reviewer for [ISWC 2014](http://iswc2014.semanticweb.org/)
+* Reviewer for [BITA 2014](http://bis.kie.ue.poznan.pl/17th_bis/wscfp.php?ws=bita2014)
+* Reviewer for [ISWC 2013](http://iswc2013.semanticweb.org/)
+* Reviewer for [WOIS 2013](http://www.informatik.uni-rostock.de/wois2013.html)
+* Reviewer for [WOP 2013](http://ontologydesignpatterns.org/wiki/WOP:2013)
+* Reviewer for [ISWC 2011](http://iswc2012.semanticweb.org/)
+* Reviewer for [BIR 2010](http://bir2010.uni-rostock.de/)
+* Reviewer for [EKAW 2010](http://ekaw2010.inesc-id.pt/)
+
+## Awards
+* Student project 2nd price at [ESCW Summer School 2012](http://summerschool2012.eswc-conferences.org/) for the [OntoTouch](http://www.ontotouch.com/) project
