@@ -8,7 +8,15 @@ permalink: /publications/
 * [Towards an Ontology Design Pattern Quality Model](http://liu.diva-portal.org/smash/get/diva2:638999/FULLTEXT02.pdf)<br />
 Karl Hammar, Linköping Studies in Science and Technology. Licentiate Thesis No. 1606. Linköping University, 2013-09-17
 
-### Peer-reviewed Publications
+### Anthology contributions
+* [Engineering Ontologies with Patterns – The eXtreme Design Methodology](http://ebooks.iospress.nl/volumearticle/45577)<br />
+Eva Blomqvist, Karl Hammar, Valentina Presutti, in Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A., and Presutti, V., [Ontology Engineering with Ontology Design Patterns](http://ebooks.iospress.nl/volume/ontology-engineering-with-ontology-design-patterns-foundations-and-applications), IOS Press, 2016
+* [Quality of Content Ontology Design Patterns](http://ebooks.iospress.nl/volumearticle/45578)<br />
+Karl Hammar, in Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A., and Presutti, V., [Ontology Engineering with Ontology Design Patterns](http://ebooks.iospress.nl/volume/ontology-engineering-with-ontology-design-patterns-foundations-and-applications), IOS Press, 2016
+* [Collected Research Questions Concerning Ontology Design Patterns](http://ebooks.iospress.nl/volumearticle/45584)<br />
+Karl Hammar, Eva Blomqvist, David Carral, Marieke van Erp, Antske Fokkens, Aldo Gangemi, Willem Robert van Hage, Pascal Hitzler, Krzysztof Janowicz, Nazifa Karima, Adila Krisnadhi, Tom Narock, Roxane Segers, Monika Solanki, and Vojtech Svatek, in Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A., and Presutti, V., [Ontology Engineering with Ontology Design Patterns](http://ebooks.iospress.nl/volume/ontology-engineering-with-ontology-design-patterns-foundations-and-applications), IOS Press, 2016
+
+### Conference or Workshop papers
 * [Ontology Design Patterns in WebProtégé](http://hj.diva-portal.org/smash/get/diva2:877199/FULLTEXT01.pdf)<br />
 Karl Hammar, Proceedings of the ISWC 2015 Posters &amp; Demonstrations Track co-located with the 14th International Semantic Web Conference (ISWC-2015), CEUR Workshop Proceedings, 2015-12-03
 * [Ontology Design Pattern Property Specialisation Strategies](http://link.springer.com/chapter/10.1007/978-3-319-13704-9_13)<br />
