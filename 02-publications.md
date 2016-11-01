@@ -9,25 +9,25 @@ permalink: /publications/
 Karl Hammar, Linköping Studies in Science and Technology. Licentiate Thesis No. 1606. Linköping University, 2013-09-17
 
 ### Anthology contributions
-* [Engineering Ontologies with Patterns – The eXtreme Design Methodology](http://ebooks.iospress.nl/volumearticle/45577)<br />
+* [Engineering Ontologies with Patterns – The eXtreme Design Methodology](http://hj.diva-portal.org/smash/get/diva2:1040714/FULLTEXT01.pdf)<br />
 Eva Blomqvist, Karl Hammar, Valentina Presutti, in Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A., and Presutti, V., [Ontology Engineering with Ontology Design Patterns](http://ebooks.iospress.nl/volume/ontology-engineering-with-ontology-design-patterns-foundations-and-applications), IOS Press, 2016
-* [Quality of Content Ontology Design Patterns](http://ebooks.iospress.nl/volumearticle/45578)<br />
+* [Quality of Content Ontology Design Patterns](http://hj.diva-portal.org/smash/get/diva2:1040720/FULLTEXT01.pdf)<br />
 Karl Hammar, in Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A., and Presutti, V., [Ontology Engineering with Ontology Design Patterns](http://ebooks.iospress.nl/volume/ontology-engineering-with-ontology-design-patterns-foundations-and-applications), IOS Press, 2016
-* [Collected Research Questions Concerning Ontology Design Patterns](http://ebooks.iospress.nl/volumearticle/45584)<br />
+* [Collected Research Questions Concerning Ontology Design Patterns](http://hj.diva-portal.org/smash/get/diva2:1040723/FULLTEXT01.pdf)<br />
 Karl Hammar, Eva Blomqvist, David Carral, Marieke van Erp, Antske Fokkens, Aldo Gangemi, Willem Robert van Hage, Pascal Hitzler, Krzysztof Janowicz, Nazifa Karima, Adila Krisnadhi, Tom Narock, Roxane Segers, Monika Solanki, and Vojtech Svatek, in Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A., and Presutti, V., [Ontology Engineering with Ontology Design Patterns](http://ebooks.iospress.nl/volume/ontology-engineering-with-ontology-design-patterns-foundations-and-applications), IOS Press, 2016
 
 ### Conference or Workshop papers
 * [Ontology Design Patterns in WebProtégé](http://hj.diva-portal.org/smash/get/diva2:877199/FULLTEXT01.pdf)<br />
 Karl Hammar, Proceedings of the ISWC 2015 Posters &amp; Demonstrations Track co-located with the 14th International Semantic Web Conference (ISWC-2015), CEUR Workshop Proceedings, 2015-12-03
-* [Ontology Design Pattern Property Specialisation Strategies](http://link.springer.com/chapter/10.1007/978-3-319-13704-9_13)<br />
+* [Ontology Design Pattern Property Specialisation Strategies](http://www.diva-portal.org/smash/get/diva2:767177/FULLTEXT01.pdf)<br />
  Karl Hammar, Knowledge Engineering and Knowledge Management: 19th International Conference, EKAW 2014, Springer 2014
-* [Ontology Design Patterns: Improving Findability and Composition](http://link.springer.com/chapter/10.1007/978-3-319-11955-7_1)<br />
+* [Ontology Design Patterns: Improving Findability and Composition](http://www.diva-portal.org/smash/get/diva2:767176/FULLTEXT01.pdf)<br />
 Karl Hammar, The Semantic Web: ESWC 2014 Satellite Events, Springer, 2014
 * [Ontology Design Patterns: Adoption Challenges and Solutions](http://hj.diva-portal.org/smash/get/diva2:747226/FULLTEXT01.pdf)<br />
 Karl Hammar, WaSABi-FEOSW 2014: Joint Proceedings of WaSABi 2014 and FEOSW 2014, CEUR Workshop Proceedings, 2014-09-14
 * [Reasoning Performance Indicators for Ontology Design Patterns](http://hj.diva-portal.org/smash/get/diva2:687907/FULLTEXT01.pdf)<br />
 Karl Hammar, WOP 2013: Proceedings of the 4th Workshop on Ontology and Semantic Web Patterns, in conjunction with the 12th International Semantic Web Conference (ISWC) 2013, CEUR Workshop Proceedings, 2014-07-04
-* [Ontology Design Patterns in Use - Lessons Learnt from an Ontology Engineering Case](http://ceur-ws.org/Vol-929/paper2.pdf)<br />
+* [Ontology Design Patterns in Use - Lessons Learnt from an Ontology Engineering Case](http://www.diva-portal.org/smash/get/diva2:567395/FULLTEXT02)<br />
  Karl Hammar, WOP 2012: Proceedings of the 3rd Workshop on Ontology Patterns, in conjunction with the 11th International Semantic Web Conference (ISWC) 2012, CEUR Workshop Proceedings, 2012-10-30
 * [Modular Semantic CEP for Threat Detection](http://hj.diva-portal.org/smash/get/diva2:512242/FULLTEXT02)<br />
    Karl Hammar, Operations Research and Data Mining (ORADM) 2012 Proceedings, National Polytechnic Institute, 2012-03-27
