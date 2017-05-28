@@ -1,13 +1,13 @@
-# baseURI: http://www.karlhammar.com/ontologies/2017/05/ScopedPropertyExample
+# baseURI: http://www.karlhammar.com/ontologies/2017/05/ScopedPropertyExample.ttl
 
-@prefix : <http://www.karlhammar.com/ontologies/2017/05/ScopedPropertyExample#> .
+@prefix : <http://www.karlhammar.com/ontologies/2017/05/ScopedPropertyExample.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spin: <http://spinrdf.org/spin#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.karlhammar.com/ontologies/2017/05/ScopedPropertyExample>
+<http://www.karlhammar.com/ontologies/2017/05/ScopedPropertyExample.ttl>
   rdf:type owl:Ontology ;
   spin:imports <http://topbraid.org/spin/owlrl-all> ;
   owl:versionInfo "Created with TopBraid Composer" ;
