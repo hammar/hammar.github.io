@@ -4,6 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 
+{% bibliography %}
+
 ### Theses
 * [Towards an Ontology Design Pattern Quality Model](http://liu.diva-portal.org/smash/get/diva2:638999/FULLTEXT02.pdf)<br />
 Karl Hammar, Linköping Studies in Science and Technology. Licentiate Thesis No. 1606. Linköping University, 2013-09-17

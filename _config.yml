@@ -12,3 +12,11 @@ url: "http://karlhammar.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+# Jekyll-scholar configuration
+scholar:
+  sort_by: year
+  order: descending
+  group_by: type
+  bibliography_template: <abbr>[{{key}}]</abbr>{{reference}}
+  bibliography: bibliography.bib
