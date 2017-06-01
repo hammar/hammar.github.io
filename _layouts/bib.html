@@ -1,0 +1,28 @@
+---
+---
+
+<a id="{{entry.key}}" href="{{entry.url}}">{{entry.title}}</a><br />
+{{entry.author}},
+<i>{{entry.booktitle}}</i>,
+{{entry.organization}},
+{{entry.year}}
+
+<hr />
+
+<hr />
+
+{{ reference }}
+
+<hr />
+
+{{entry.year}}
+
+{{entry.title}}
+
+{{entry.editor}}
+
+{% if entry.abstract %}
+<p>{{ entry.abstract }}</p>
+{% endif %}
+
+<pre>{{ entry.bibtex }}</pre>

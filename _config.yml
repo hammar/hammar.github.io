@@ -18,5 +18,8 @@ scholar:
   sort_by: year
   order: descending
   group_by: type
-  bibliography_template: <abbr>[{{key}}]</abbr>{{reference}}
+  bibliography_template: bib
   bibliography: bibliography.bib
+  bibliography_list_tag: ul
+  bibliography_list_attributes: {about: "http://karlhammar.com/#karl", rel: "foaf:made"}
+#  bibliography_item_attributes: {id: {{entry.key}}}
