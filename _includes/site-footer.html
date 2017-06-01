@@ -1,20 +1,20 @@
-<footer class="site-footer">
+<footer id="site-footer">
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+  <header id="footer-heading">{{ site.title }}</header>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
+    <div id="footer-col-wrapper">
+      <div class="footer-col" id="footer-col-1">
+        <ul id="contact-list">
           <li>{{ site.name }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           <li>Phone: {{ site.phone }}</li>
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
+      <div class="footer-col" id="footer-col-2">
+        <ul id="social-media-list">
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -29,7 +29,7 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
+      <div class="footer-col" id="footer-col-3">
         <p>{{ site.contact }}</p>
       </div>
     </div>

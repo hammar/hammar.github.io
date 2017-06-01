@@ -1,10 +1,12 @@
 /**
  * Site header
  */
-.site-header {
+#site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+
+    margin-bottom: 2em;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -97,23 +99,23 @@
 /**
  * Site footer
  */
-.site-footer {
+#site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
-.footer-heading {
+#footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
+#contact-list,
+#social-media-list {
     list-style: none;
     margin-left: 0;
 }
 
-.footer-col-wrapper {
+#footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
@@ -126,17 +128,17 @@
     padding-left: $spacing-unit / 2;
 }
 
-.footer-col-1 {
+#footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-2 {
+#footer-col-2 {
     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
     width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-3 {
+#footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
