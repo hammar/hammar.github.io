@@ -1,12 +1,12 @@
-<footer id="site-footer">
+<footer id="site-footer" about="http://karlhammar.com/#karl">
 
   <div class="wrapper">
 
-  <header id="footer-heading">{{ site.title }}</header>
+  <header id="footer-heading"><a rel="foaf:homepage foaf:made" href="http://karlhammar.com">{{ site.title }}</a></header>
 
     <div id="footer-col-wrapper">
       <div class="footer-col" id="footer-col-1">
-        <ul id="contact-list" about="http://karlhammar.com/#karl">
+        <ul id="contact-list">
           <li property="foaf:name">Karl Hammar</li>
           <li><a rel="foaf:mbox" href="mailto:karl@karlhammar.com">karl@karlhammar.com</a></li>
           <li>Phone: <a rel="foaf:phone" href="tel:+4636101611">+46 (0)36 10 16 11</a></li>
@@ -14,7 +14,7 @@
       </div>
 
       <div class="footer-col" id="footer-col-2">
-        <ul id="social-media-list" about="http://karlhammar.com/#karl">
+        <ul id="social-media-list">
           <li><a rel="foaf:account" href="https://github.com/hammar"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">hammar</span></a></li>
           <li><a rel="foaf:account" href="https://twitter.com/karlhammar"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">karlhammar</span></a></li>
         </ul>
@@ -26,6 +26,8 @@
         School of Engineering, Jönköping University</p>
       </div>
     </div>
+
+    <span rel="rdfs:seeAlso" resource="http://karlhammar.com/publications/"></span>
 
   </div>
 
