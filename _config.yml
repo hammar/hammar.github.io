@@ -7,10 +7,6 @@
 
 # Site settings
 title: KarlHammar.com
-contact: > # this means to ignore newlines until "baseurl:"
-  Room E2413<br />
-  Department of Computer Science and Informatics<br />
-  School of Engineering, Jönköping University
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://karlhammar.com" # the base hostname & protocol for your site
 
