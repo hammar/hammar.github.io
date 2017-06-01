@@ -6,26 +6,17 @@
 
     <div id="footer-col-wrapper">
       <div class="footer-col" id="footer-col-1">
-        <ul id="contact-list">
-          <li>{{ site.name }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li>Phone: {{ site.phone }}</li>
+        <ul id="contact-list" about="http://karlhammar.com/#karl">
+          <li property="foaf:name">Karl Hammar</li>
+          <li><a rel="foaf:mbox" href="mailto:karl@karlhammar.com">karl@karlhammar.com</a></li>
+          <li>Phone: <a rel="foaf:phone" href="tel:+4636101611">+46 (0)36 10 16 11</a></li>
         </ul>
       </div>
 
       <div class="footer-col" id="footer-col-2">
-        <ul id="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
+        <ul id="social-media-list" about="http://karlhammar.com/#karl">
+          <li><a rel="foaf:account" href="https://github.com/hammar"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">hammar</span></a></li>
+          <li><a rel="foaf:account" href="https://twitter.com/karlhammar"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">karlhammar</span></a></li>
         </ul>
       </div>
 
