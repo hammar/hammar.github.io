@@ -1,17 +1,20 @@
 ---
 ---
 
-<a id="{{entry.key}}" href="{{entry.url}}">{{entry.title}}</a><br />
+<span about="http://karlhammar.com/publications/#{{key}}" typeof="schema:ScholarlyArticle">
+  {{ reference }}
+  <span rel="schema:name" content="{{entry.title}}" />
+</span>
+<!--<a id="{{entry.key}}" href="{{entry.url}}">{{entry.title}}</a><br />
 {{entry.author}},
+{{entry.editor}}
 <i>{{entry.booktitle}}</i>,
 {{entry.organization}},
 {{entry.year}}
 
 <hr />
 
-<hr />
-
-{{ reference }}
+ {{ reference }}
 
 <hr />
 
@@ -23,6 +26,6 @@
 
 {% if entry.abstract %}
 <p>{{ entry.abstract }}</p>
-{% endif %}
+{% endif %}-->
 
 <pre>{{ entry.bibtex }}</pre>
