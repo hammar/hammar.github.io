@@ -13,6 +13,9 @@ url: "http://karlhammar.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+# Gems
+gems: ['jekyll/scholar']
+
 # Jekyll-scholar configuration
 scholar:
   sort_by: year
