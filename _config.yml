@@ -26,3 +26,4 @@ scholar:
   bibliography_list_tag: ul
   bibliography_list_attributes: {about: "http://karlhammar.com/#karl", rel: "foaf:made"}
   type_names: { proceedings: Edited Proceedings }
+  repository: pdfs

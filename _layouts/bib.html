@@ -3,6 +3,9 @@
 
 <span about="http://karlhammar.com/publications/#{{key}}" typeof="schema:ScholarlyArticle">
   {{ reference }}
+  {% if link %}
+  <a property="schema:encoding" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
+  {% endif %}
   <span property="schema:name" content="{{entry.title}}"></span>
   <span property="schema:datePublished" content="{{entry.year}}"></span>
 
