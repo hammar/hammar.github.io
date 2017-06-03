@@ -3,29 +3,55 @@
 
 <span about="http://karlhammar.com/publications/#{{key}}" typeof="schema:ScholarlyArticle">
   {{ reference }}
-  <span rel="schema:name" content="{{entry.title}}" />
+  <span property="schema:name" content="{{entry.title}}"></span>
+  <span property="schema:datePublished" content="{{entry.year}}"></span>
+
+  {% assign authors = entry.author | split: " and " %}
+  {% for author in authors %}
+    <span rel="schema:author">
+      <span typeof="schema:Person" property="schema:name" content="{{author}}"></span>
+    </span>
+  {% endfor %}
+
+
+  {% if entry.pages %}
+  {% assign pages = entry.pages | split: "–" %}
+  <span property="schema:pageStart" content="{{pages.first}}"></span>
+  <span property="schema:pageEnd" content="{{pages.last}}"></span>
+  {% endif %}
+
+
+  {% if entry.publisher %}
+  <span property="schema:publisher">
+    <span typeof="schema:Organization" property="schema:name" content="{{entry.publisher}}"></span>
+  </span>
+  {% endif %}
+
+
+  {% if entry.type == "inproceedings" %}
+  <span property="schema:author" resource="http://karlhammar.com/#karl"></span>
+  <span rel="schema:isPartOf">
+    <span typeof="schema:CreativeWork" property="schema:name" content="{{entry.booktitle}}">
+      {% assign editors = entry.editor | split: " and " %}
+      {% for editor in editors %}
+      <span rel="schema:editor">
+        <span typeof="schema:Person" property="schema:name" content="{{editor}}"></span>
+      </span>
+      {% endfor %}
+    </span>
+  </span>
+  {% endif %}
+
+
+  {% if entry.type== "proceedings" %}
+  <span property="schema:editor" resource="http://karlhammar.com/#karl"></span>
+  {% assign editors = entry.editor | split: " and " %}
+    {% for editor in editors %}
+    <span rel="schema:editor">
+      <span typeof="schema:Person" property="schema:name" content="{{editor}}"></span>
+    </span>
+    {% endfor %}
+  {% endif %}
+
+
 </span>
-<!--<a id="{{entry.key}}" href="{{entry.url}}">{{entry.title}}</a><br />
-{{entry.author}},
-{{entry.editor}}
-<i>{{entry.booktitle}}</i>,
-{{entry.organization}},
-{{entry.year}}
-
-<hr />
-
- {{ reference }}
-
-<hr />
-
-{{entry.year}}
-
-{{entry.title}}
-
-{{entry.editor}}
-
-{% if entry.abstract %}
-<p>{{ entry.abstract }}</p>
-{% endif %}-->
-
-<pre>{{ entry.bibtex }}</pre>
