@@ -13,8 +13,13 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   </head>
 
-  <body about="" typeof="foaf:PersonalProfileDocument">
-    <meta rel="foaf:primaryTopic" resource="http://karlhammar.com/#karl" />
+  {% if page.url == "/" %}
+  <body about="http://karlhammar.com/" typeof="foaf:PersonalProfileDocument">
+  <meta rel="foaf:primaryTopic foaf:maker" resource="http://karlhammar.com/#karl" />
+  {% else %}
+  <body about="http://karlhammar.com{{page.url}}" typeof="foaf:Document">
+  <meta rel="foaf:maker" resource="http://karlhammar.com/#karl" />
+  {% endif %}
 
     {% include site-header.html %}
 
