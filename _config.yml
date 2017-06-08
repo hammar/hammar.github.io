@@ -20,10 +20,12 @@ gems: ['jekyll/scholar']
 scholar:
   sort_by: year
   order: descending
+  type_names: { proceedings: Edited Proceedings }
   group_by: type
+  type_order: [thesis, article, incollection, inproceedings, proceedings]
+  group_order: ascending
   bibliography_template: bib
   bibliography: bibliography.bib
   bibliography_list_tag: ul
   bibliography_list_attributes: {about: "http://karlhammar.com/#karl", rel: "foaf:made"}
-  type_names: { proceedings: Edited Proceedings }
   repository: pdfs
