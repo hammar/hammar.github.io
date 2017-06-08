@@ -10,6 +10,12 @@ title: KarlHammar.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://karlhammar.com" # the base hostname & protocol for your site
 
+# Settings for deploy Rake task
+destination: ../karlhammar.com/
+username: hammar
+repo: hammar.github.io
+branch: source
+
 # Build settings
 markdown: kramdown
 
@@ -29,3 +35,13 @@ scholar:
   bibliography_list_tag: ul
   bibliography_list_attributes: {about: "http://karlhammar.com/#karl", rel: "foaf:made"}
   repository: pdfs
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
