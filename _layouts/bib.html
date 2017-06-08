@@ -25,14 +25,12 @@
 
 
   {% if entry.publisher %}
-  <span property="schema:publisher">
+  <span rel="schema:publisher">
     <span typeof="schema:Organization" property="schema:name" content="{{entry.publisher}}"></span>
   </span>
   {% endif %}
 
-
-  {% if entry.type == "inproceedings" %}
-  <span property="schema:author" resource="http://karlhammar.com/#karl"></span>
+  {% if entry.type == "inproceedings" or entry.type == "incollection" %}
   <span rel="schema:isPartOf">
     <span typeof="schema:CreativeWork" property="schema:name" content="{{entry.booktitle}}">
       {% assign editors = entry.editor | split: " and " %}
@@ -45,6 +43,9 @@
   </span>
   {% endif %}
 
+  {% unless entry.type== "proceedings" %}
+  <span property="schema:author" resource="http://karlhammar.com/#karl"></span>
+  {% endunless %}
 
   {% if entry.type== "proceedings" %}
   <span property="schema:editor" resource="http://karlhammar.com/#karl"></span>
