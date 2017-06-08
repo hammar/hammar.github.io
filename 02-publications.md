@@ -33,9 +33,3 @@ Karl Hammar, WOP 2013: Proceedings of the 4th Workshop on Ontology and Semantic 
  Karl Hammar, Kurt Sandkuhl, Proceedings of the Workshop on Ontology Patterns (WOP) at the International Semantic Web Conference (ISWC) 2010, CEUR-WS, 2010-11-16</del>
 * <del>[Information Reuse and Interoperability with Ontology Patterns and Linked Data - First Experiences from the ExpertFinder Project](http://hj.diva-portal.org/smash/get/diva2:321895/FULLTEXT02)<br />
  Karl Hammar, Vladimir Tarasov, Feiyu Lin, International Conference on Business Information System (BIS) 2010 Workshops Proceedings, Springer, 2010-05-05</del>
-
-### Edited Proceedings
-* <del>[WaSABi 2013 -  Semantic Web Enterprise Adoption and Best Practice](http://ceur-ws.org/Vol-1106/)<br />
-Sam Coppens, Karl Hammar, Magnus Knuth, Marco Neumann, Dominique Ritze, Harald Sack, Miel Vander Sande,  Workshop on Semantic Web Enterprise Adoption and Best Practice c o-located with 12th International Semantic Web Conference (ISWC 2013), CEUR Workshop Proceedings, 2013-12-05</del>
-* <del>[WOP 2012 - Proceedings of the 3rd Workshop on Ontology Patterns](http://ceur-ws.org/Vol-929/proceedings.pdf)<br />
- Eva Blomqvist, Aldo Gangemi, Karl Hammar, Mari Carmen Suárez-Figueroa, Workshop on Ontology Patterns in conjunction with the 11th International Semantic Web Conference 2012 (ISWC 2012), CEUR Workshop Proceedings, 2012-10-30</del>
