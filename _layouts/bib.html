@@ -1,7 +1,7 @@
 ---
 ---
 
-<span about="http://karlhammar.com/publications/#{{key}}" typeof="schema:ScholarlyArticle">
+<span about="http://karlhammar.com/publications/#{{key}}" typeof="schema:ScholarlyArticle foaf:Document">
   {{ reference }}
   {% if link %}
   <br /><a property="schema:encoding" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
@@ -10,9 +10,12 @@
   <span property="schema:datePublished" content="{{entry.year}}"></span>
 
   {% assign authors = entry.author | split: " and " %}
-  {% for author in authors %}
-    <span rel="schema:author">
-      <span typeof="schema:Person" property="schema:name" content="{{author}}"></span>
+  {% for author in entry.author_array %}
+    <span rel="schema:author foaf:maker">
+      <span typeof="schema:Person foaf:Person">
+        <span property="foaf:givenName schema:givenName" content="{{author.first}}"></span>
+        <span property="foaf:familyName schema:familyName" content="{{author.last}}"></span>
+      </span>
     </span>
   {% endfor %}
 
@@ -26,7 +29,7 @@
 
   {% if entry.publisher %}
   <span rel="schema:publisher">
-    <span typeof="schema:Organization" property="schema:name" content="{{entry.publisher}}"></span>
+    <span typeof="schema:Organization foaf:Organization" property="schema:name foaf:name" content="{{entry.publisher}}"></span>
   </span>
   {% endif %}
 
@@ -44,7 +47,7 @@
   {% endif %}
 
   {% unless entry.type== "proceedings" %}
-  <span property="schema:author" resource="http://karlhammar.com/#karl"></span>
+  <span property="schema:author foaf:maker" resource="http://karlhammar.com/#karl"></span>
   {% endunless %}
 
   {% if entry.type== "proceedings" %}
@@ -52,7 +55,7 @@
   {% assign editors = entry.editor | split: " and " %}
     {% for editor in editors %}
     <span rel="schema:editor">
-      <span typeof="schema:Person" property="schema:name" content="{{editor}}"></span>
+      <span typeof="schema:Person foaf:Person" property="schema:name" content="{{editor}}"></span>
     </span>
     {% endfor %}
   {% endif %}
