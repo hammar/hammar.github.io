@@ -2,4 +2,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'jekyll-scholar'
+gem "jekyll-scholar"
+gem "rake"
