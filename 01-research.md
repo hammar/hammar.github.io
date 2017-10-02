@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-The first stage of my PhD project (in Swedish the Licentiate or PhL degree) concerned the development of quality criteria and associated quality indicators for Ontology Design Patterns. The latter half of my PhD project, currently in progress, concerns extending upon this work by developing methods and tooling to simplify the development and use of high-quality Ontology Design Patterns.
+The first stage of my PhD project (in Swedish the Licentiate or PhL degree) concerned the development of quality criteria and associated quality indicators for Ontology Design Patterns. The latter half of my PhD project extended upon this work by developing methods and tooling to simplify the development and use of high-quality Ontology Design Patterns. Subsequently I have begun exploring challenges in ontology visualisation, modularisation, and the decoupling of ontology interface and implementation.
 
 Below you'll find some more information about my research contributions. You can also visit the [publications page](/publications/) for a full list of papers I've authored.
 
