@@ -9,10 +9,12 @@ The first stage of my PhD project (in Swedish the Licentiate or PhL degree) conc
 Below you'll find some more information about my research contributions. You can also visit the [publications page](/publications/) for a full list of papers I've authored.
 
 ## Invited talks
-
-* Speaker at [Ontology Summit 2014](http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2014) Track C: Overcoming Ontology Engineering Bottlenecks -- Strategies and Building Blocks. Title of the talk: "[Reasoning Performance Indicators for Ontology Design Patterns](http://ontolog.cim3.net/file/work/OntologySummit2014/2014-02-06_OntologySummit2014_Overcoming-Ontology-Engineering-Bottlenecks-1/OntologySummit2014_ODP-Reasoning-Indicators--KarlHammar_20140206.pdf)". Audio and transcripts available at [OntoLog](http://ontolog.cim3.net/cgi-bin/wiki.pl?ConferenceCall_2014_02_06).
+* Keynote speaker at Cybercom Group Jönköping staff conference 2017. 2017-05-15
+* Speaker at [Smart Buildings, Big Data, Crime, and more](https://www.meetup.com/Swedish-Semantic-Practitioners/events/239452159/), inaugural meeting of the [Swedish Semantic Practitioners](https://www.meetup.com/Swedish-Semantic-Practitioners/) meetup group. 2017-05-09
+* Speaker at [Ontology Summit 2014](http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2014) Track C: Overcoming Ontology Engineering Bottlenecks -- Strategies and Building Blocks. Title of the talk: "[Reasoning Performance Indicators for Ontology Design Patterns](http://ontolog.cim3.net/file/work/OntologySummit2014/2014-02-06_OntologySummit2014_Overcoming-Ontology-Engineering-Bottlenecks-1/OntologySummit2014_ODP-Reasoning-Indicators--KarlHammar_20140206.pdf)". Audio and transcripts available at [OntoLog](http://ontolog.cim3.net/cgi-bin/wiki.pl?ConferenceCall_2014_02_06). 2014-02-06
 
 ## Conferences and workshops
+* Tutor at the [Modular Ontology Modeling with Ontology Design Patterns](http://ontologydesignpatterns.org/wiki/Training:Tutorial:_Modular_Ontology_Modeling_with_Ontology_Design_Patterns_at_ESWC2017) tutorial at [ESWC 2017](https://2017.eswc-conferences.org)
 * Chair of the [Ontology Design Patterns for Linked Data Publishing](http://ontologydesignpatterns.org/wiki/Training:Ontology_Design_Patterns_for_Linked_Data_Publishing_at_ISWC_2016) tutorial at [ISWC 2016](http://iswc2016.semanticweb.org/)
 * Chair of the [7th Workshop on Ontology and Semantic Web Patterns](http://ontologydesignpatterns.org/wiki/WOP:2016) at [ISWC 2016](http://iswc2016.semanticweb.org/)
 * Chair of the [Workshop on Semantic Web Enterprise Adoption and Best Practice (WaSABi)](http://www.wasabi-ws.org/) at [ESWC 2014](http://2014.eswc-conferences.org/)
@@ -21,6 +23,10 @@ Below you'll find some more information about my research contributions. You can
 
 ## Research support
 
+* Reviewer for [K-CAP 2017](http://k-cap2017.org)
+* Reviewer for [ISWC 2017](https://iswc2017.semanticweb.org)
+* Reviewer for [WOP 2017](http://ontologydesignpatterns.org/wiki/WOP:2017)
+* Reviewer for [SEMANTiCS 2017](https://2017.semantics.cc)
 * Reviewer for [EKAW 2016](http://ekaw2016.cs.unibo.it/)
 * Reviewer for [WWW2016](http://www2016.ca/)
 * Reviewer for [ISWC 2015](http://iswc2015.semanticweb.org/)
