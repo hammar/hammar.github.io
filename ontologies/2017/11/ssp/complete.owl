@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#"
+     xml:base="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeIncludedIn">
+        <rdfs:label>Crime included in</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#ParticipatingInCrime -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#ParticipatingInCrime">
+        <rdfs:label>Participating in crime</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonIncludedIn">
+        <rdfs:label>Person included in</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonParticipating -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonParticipating">
+        <rdfs:label>Person participating</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RC7UQZvWfsJdL8L3P9MDG20 -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RC7UQZvWfsJdL8L3P9MDG20">
+        <rdfs:label>is person record of</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonRecord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RCeHL8v2HF9xQJoFcXnRkaj -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RCeHL8v2HF9xQJoFcXnRkaj">
+        <rdfs:label>has person record</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonRecord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RoleIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RoleIncludedIn">
+        <rdfs:label>Role included in</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RoleOfPerson -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RoleOfPerson">
+        <rdfs:label>Role of person</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#atPlace -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#atPlace">
+        <rdfs:label>at place</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#atPlace"/>
+            <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsPlace"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#atPlace"/>
+            <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsStreet"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsStreet"/>
+            <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#atPlace"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsPlace -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsPlace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>contains place</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsStreet -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsStreet">
+        <rdfs:label>contains street</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#City"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetAddress"/>
+        <rdfs:subPropertyOf rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsPlace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#duringTime -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#duringTime">
+        <rdfs:label>during time</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeDuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#hasParticipant">
+        <rdfs:label>has participant</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>is located in</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isLocatedInCity -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isLocatedInCity">
+        <rdfs:label>is located in city</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#City"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetAddress"/>
+        <rdfs:subPropertyOf rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isParticipantIn">
+        <rdfs:label>is participant in</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#personHasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#personHasAddress">
+        <rdfs:label>person has address</rdfs:label>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+                    <rdf:Description rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonRecord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>Street number</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationEndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationEndTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>duration end time</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationStartTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>duration start time</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationTime -->
+
+    <owl:DatatypeProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#durationTime">
+        <rdfs:label>duration time</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeDuration"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#postCode -->
+
+    <owl:DatatypeProperty rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#postCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>post code</rdfs:label>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#City -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#City">
+        <rdfs:label>City</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime">
+        <rdfs:label>Crime</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#duringTime"/>
+                <owl:allValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeDuration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#atPlace"/>
+                <owl:allValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeDuration -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeDuration">
+        <rdfs:label>CrimeDuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeParticipation">
+        <rdfs:label>Crime participation</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#ParticipatingInCrime"/>
+                <owl:someValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonParticipating"/>
+                <owl:someValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RoleOfPerson"/>
+                <owl:someValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeRole -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#CrimeRole">
+        <rdfs:label>Crime role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person">
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Crime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonRecord -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#PersonRecord">
+        <rdfs:label>Person record</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#RC7UQZvWfsJdL8L3P9MDG20"/>
+                <owl:allValuesFrom rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place">
+        <rdfs:label>Place</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#containsPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetAddress -->
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#StreetAddress">
+        <rdfs:label>Street address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2017/11/ssp/complete.owl#Place"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
