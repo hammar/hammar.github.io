@@ -5,15 +5,16 @@
   {{ reference }}
   {% if link %}
   <br /><a itemprop="associatedMedia" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
+  <link itemprop="image" href="http://karlhammar.com{{link}}" />
   {% endif %}
-  <span itemprop="name" content="{{entry.title}}"></span>
-  <span itemprop="datePublished" content="{{entry.year}}"></span>
+  <span itemprop="headline" content="{{entry.title}}" />
+  <span itemprop="datePublished" content="{{entry.year}}" />
 
   {% for author in entry.author_array %}
     <span itemprop="author">
       <span itemscope itemtype="http://schema.org/Person">
-        <span itemprop="givenName" content="{{author.first}}"></span>
-        <span itemprop="familyName" content="{{author.last}}"></span>
+        <span itemprop="givenName" content="{{author.first}}" />
+        <span itemprop="familyName" content="{{author.last}}" />
       </span>
     </span>
   {% endfor %}
@@ -21,8 +22,8 @@
 
   {% if entry.pages %}
   {% assign pages = entry.pages | split: "–" %}
-  <span itemprop="pageStart" content="{{pages.first}}"></span>
-  <span itemprop="pageEnd" content="{{pages.last}}"></span>
+  <span itemprop="pageStart" content="{{pages.first}}" />
+  <span itemprop="pageEnd" content="{{pages.last}}" />
   {% endif %}
 
 

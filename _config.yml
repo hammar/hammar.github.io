@@ -33,7 +33,6 @@ scholar:
   bibliography_template: bib
   bibliography: bibliography.bib
   bibliography_list_tag: ul
-  bibliography_list_attributes: {about: "http://karlhammar.com/#karl", rel: "foaf:made"}
   repository: pdfs
 
 exclude:
