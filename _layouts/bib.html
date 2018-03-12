@@ -1,7 +1,7 @@
 ---
 ---
 
-<span itemscope itemtype="http://schema.org/ScholarlyArticle" itemid="http://karlhammar.com/publications/#{{key}}">
+<div itemscope itemtype="http://schema.org/ScholarlyArticle" itemid="http://karlhammar.com/publications/#{{key}}">
   {{ reference }}
   {% if link %}
   <br /><a itemprop="associatedMedia" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
@@ -11,10 +11,10 @@
   <span itemprop="datePublished" content="{{entry.year}}" />
 
   {% for author in entry.author_array %}
-    <span itemprop="author"  itemscope itemtype="http://schema.org/Person">
+    <div itemprop="author"  itemscope itemtype="http://schema.org/Person">
         <span itemprop="givenName" content="{{author.first}}" />
         <span itemprop="familyName" content="{{author.last}}" />
-    </span>
+    </div>
   {% endfor %}
 
 
@@ -26,36 +26,36 @@
 
 
   {% if entry.publisher %}
-  <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <span itemprop="name" content="{{entry.publisher}}"></span>
-  </span>
+  </div>
   {% endif %}
 
   {% if entry.type == "inproceedings" or entry.type == "incollection" %}
-  <span itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork">
-    <span itemprop="name" content="{{entry.booktitle}}">
+  <div itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork">
+    <div itemprop="name" content="{{entry.booktitle}}">
       {% for editor in entry.editor_array %}
-      <span itemprop="editor" itemscope itemtype="http://schema.org/Person">
+      <div itemprop="editor" itemscope itemtype="http://schema.org/Person">
           <span itemprop="givenName" content="{{editor.first}}"></span>
           <span itemprop="familyName" content="{{editor.last}}"></span>
-      </span>
+      </div>
       {% endfor %}
-    </span>
-  </span>
+    </div>
+  </div>
   {% endif %}
 
   {% unless entry.type== "proceedings" %}
-  <span itemprop="author" content="http://karlhammar.com/#karl"></span>
+  <span itemprop="author" content="http://karlhammar.com/#karl" />
   {% endunless %}
 
   {% if entry.type== "proceedings" %}
-  <span itemprop="editor" content="http://karlhammar.com/#karl"></span>
+  <span itemprop="editor" content="http://karlhammar.com/#karl" />
   {% for editor in entry.editor_array %}
-  <span itemprop="editor" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="givenName" content="{{editor.first}}"></span>
-      <span itemprop="familyName" content="{{editor.last}}"></span>
-  </span>
+  <div itemprop="editor" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="givenName" content="{{editor.first}}" />
+      <span itemprop="familyName" content="{{editor.last}}" />
+  </div>
   {% endfor %}
   {% endif %}
 
-</span>
+</div>
