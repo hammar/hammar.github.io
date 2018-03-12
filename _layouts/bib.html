@@ -11,11 +11,9 @@
   <span itemprop="datePublished" content="{{entry.year}}" />
 
   {% for author in entry.author_array %}
-    <span itemprop="author">
-      <span itemscope itemtype="http://schema.org/Person">
+    <span itemprop="author"  itemscope itemtype="http://schema.org/Person">
         <span itemprop="givenName" content="{{author.first}}" />
         <span itemprop="familyName" content="{{author.last}}" />
-      </span>
     </span>
   {% endfor %}
 
@@ -28,20 +26,18 @@
 
 
   {% if entry.publisher %}
-  <span itemprop="publisher">
-    <span itemscope itemtype="http://schema.org/Organization" itemprop="name" content="{{entry.publisher}}"></span>
+  <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span itemprop="name" content="{{entry.publisher}}"></span>
   </span>
   {% endif %}
 
   {% if entry.type == "inproceedings" or entry.type == "incollection" %}
-  <span itemprop="isPartOf">
-    <span itemscope itemtype="http://schema.org/CreativeWork" itemprop="name" content="{{entry.booktitle}}">
+  <span itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork">
+    <span itemprop="name" content="{{entry.booktitle}}">
       {% for editor in entry.editor_array %}
-      <span itemprop="editor">
-        <span itemscope itemtype="http://schema.org/Person">
+      <span itemprop="editor" itemscope itemtype="http://schema.org/Person">
           <span itemprop="givenName" content="{{editor.first}}"></span>
           <span itemprop="familyName" content="{{editor.last}}"></span>
-        </span>
       </span>
       {% endfor %}
     </span>
@@ -55,11 +51,9 @@
   {% if entry.type== "proceedings" %}
   <span itemprop="editor" content="http://karlhammar.com/#karl"></span>
   {% for editor in entry.editor_array %}
-  <span itemprop="editor">
-    <span itemscope itemtype="http://schema.org/Person">
+  <span itemprop="editor" itemscope itemtype="http://schema.org/Person">
       <span itemprop="givenName" content="{{editor.first}}"></span>
       <span itemprop="familyName" content="{{editor.last}}"></span>
-    </span>
   </span>
   {% endfor %}
   {% endif %}
