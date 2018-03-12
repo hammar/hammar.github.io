@@ -16,7 +16,7 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a rel="rdfs:seeAlso" class="page-link" href="{{ my_page.url | prepend: site.url }}">{{ my_page.title }}</a>
+          <a itemprop="relatedLink" class="page-link" href="{{ my_page.url | prepend: site.url }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
