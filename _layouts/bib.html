@@ -1,19 +1,19 @@
 ---
 ---
 
-<span about="http://karlhammar.com/publications/#{{key}}" typeof="schema:ScholarlyArticle">
+<span itemscope itemtype="http://schema.org/ScholarlyArticle" itemid="http://karlhammar.com/publications/#{{key}}">
   {{ reference }}
   {% if link %}
-  <br /><a property="schema:encoding" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
+  <br /><a itemprop="associatedMedia" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
   {% endif %}
-  <span property="schema:name" content="{{entry.title}}"></span>
-  <span property="schema:datePublished" content="{{entry.year}}"></span>
+  <span itemprop="name" content="{{entry.title}}"></span>
+  <span itemprop="datePublished" content="{{entry.year}}"></span>
 
   {% for author in entry.author_array %}
-    <span rel="schema:author">
-      <span typeof="schema:Person">
-        <span property="schema:givenName" content="{{author.first}}"></span>
-        <span property="schema:familyName" content="{{author.last}}"></span>
+    <span itemprop="author">
+      <span itemscope itemtype="http://schema.org/Person">
+        <span itemprop="givenName" content="{{author.first}}"></span>
+        <span itemprop="familyName" content="{{author.last}}"></span>
       </span>
     </span>
   {% endfor %}
@@ -21,25 +21,25 @@
 
   {% if entry.pages %}
   {% assign pages = entry.pages | split: "–" %}
-  <span property="schema:pageStart" content="{{pages.first}}"></span>
-  <span property="schema:pageEnd" content="{{pages.last}}"></span>
+  <span itemprop="pageStart" content="{{pages.first}}"></span>
+  <span itemprop="pageEnd" content="{{pages.last}}"></span>
   {% endif %}
 
 
   {% if entry.publisher %}
-  <span rel="schema:publisher">
-    <span typeof="schema:Organization" property="schema:name" content="{{entry.publisher}}"></span>
+  <span itemprop="publisher">
+    <span itemscope itemtype="http://schema.org/Organization" itemprop="name" content="{{entry.publisher}}"></span>
   </span>
   {% endif %}
 
   {% if entry.type == "inproceedings" or entry.type == "incollection" %}
-  <span rel="schema:isPartOf">
-    <span typeof="schema:CreativeWork" property="schema:name" content="{{entry.booktitle}}">
+  <span itemprop="isPartOf">
+    <span itemscope itemtype="http://schema.org/CreativeWork" itemprop="name" content="{{entry.booktitle}}">
       {% for editor in entry.editor_array %}
-      <span rel="schema:editor">
-        <span typeof="schema:Person">
-          <span property="schema:givenName" content="{{editor.first}}"></span>
-          <span property="schema:familyName" content="{{editor.last}}"></span>
+      <span itemprop="editor">
+        <span itemscope itemtype="http://schema.org/Person">
+          <span itemprop="givenName" content="{{editor.first}}"></span>
+          <span itemprop="familyName" content="{{editor.last}}"></span>
         </span>
       </span>
       {% endfor %}
@@ -48,20 +48,19 @@
   {% endif %}
 
   {% unless entry.type== "proceedings" %}
-  <span property="schema:author" resource="http://karlhammar.com/#karl"></span>
+  <span itemprop="author" content="http://karlhammar.com/#karl"></span>
   {% endunless %}
 
   {% if entry.type== "proceedings" %}
-  <span property="schema:editor" resource="http://karlhammar.com/#karl"></span>
+  <span itemprop="editor" content="http://karlhammar.com/#karl"></span>
   {% for editor in entry.editor_array %}
-  <span rel="schema:editor">
-    <span typeof="schema:Person">
-      <span property="schema:givenName" content="{{editor.first}}"></span>
-      <span property="schema:familyName" content="{{editor.last}}"></span>
+  <span itemprop="editor">
+    <span itemscope itemtype="http://schema.org/Person">
+      <span itemprop="givenName" content="{{editor.first}}"></span>
+      <span itemprop="familyName" content="{{editor.last}}"></span>
     </span>
   </span>
   {% endfor %}
   {% endif %}
-
 
 </span>
