@@ -1,9 +1,9 @@
-<footer id="site-footer" itemscope itemref="http://karlhammar.com/#karl">
+<footer id="site-footer" itemscope itemid="http://karlhammar.com/#karl" itemtype="http://schema.org/Person">
   <link itemprop="gender" href="http://schema.org/Male" />
 
   <div class="wrapper">
 
-  <header id="footer-heading"><a rel="foaf:homepage foaf:made" href="http://karlhammar.com">{{ site.title }}</a></header>
+  <header id="footer-heading"><a href="http://karlhammar.com">{{ site.title }}</a></header>
 
     <div id="footer-col-wrapper">
       <div class="footer-col" id="footer-col-1">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="footer-col" id="footer-col-2">
-        <ul id="social-media-list" itemscope itemref="http://karlhammar.com{{page.url}}">
+        <ul id="social-media-list" itemscope itemid="http://karlhammar.com{{page.url}}" itemtype="http://schema.org/WebPage">
           <li><a itemprop="relatedLink" href="https://github.com/hammar"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">hammar</span></a></li>
           <li><a itemprop="relatedLink" href="https://twitter.com/karlhammar"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">karlhammar</span></a></li>
         </ul>

@@ -6,7 +6,7 @@ layout: default
 
 {::options parse_block_html="true" /}
 
-<div itemscope itemref="http://karlhammar.com/#karl" id="karl">
+<div itemscope itemid="http://karlhammar.com/#karl" itemtype="http://schema.org/Person" id="karl">
 
 ![Karl Hammar](http://karlhammar.com/images/karl.jpg){: itemprop="image"}
 
