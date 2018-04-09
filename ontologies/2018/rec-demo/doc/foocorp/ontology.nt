@@ -1,0 +1,124 @@
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl> <http://www.w3.org/2002/07/owl#imports> <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl> <http://www.w3.org/2002/07/owl#imports> <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an ontology intended to illustrate the use of RealEstateCore (REC) and how the REC core and optional modules can be extended by a real estate company to support data modelling for their properties." .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl> <http://www.w3.org/2000/01/rdf-schema#label> "FooCorp Configuration Ontology" .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl> <http://www.w3.org/2002/07/owl#versionInfo> "Created with TopBraid Composer" .
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium> <http://www.w3.org/2000/01/rdf-schema#label> "Atrium" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium> <http://www.w3.org/2000/01/rdf-schema#label> "Auditorium" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice> <http://www.w3.org/2000/01/rdf-schema#label> "Back office" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom> <http://www.w3.org/2000/01/rdf-schema#label> "Bathroom" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> <http://www.w3.org/2000/01/rdf-schema#label> "Cinema" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom> <http://www.w3.org/2000/01/rdf-schema#label> "Cleaning room" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom> <http://www.w3.org/2000/01/rdf-schema#label> "Cloak room" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "BACnet configuration" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 Sensor" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "KNX Configuration" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "LoRa configuration" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "MBus configuration" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema> <http://www.w3.org/2000/01/rdf-schema#label> "IMAX cinema" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor temperature sensor" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#OutdoorTemperatureSensor
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#OutdoorTemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#OutdoorTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#OutdoorTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Outdoor temperature sensor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent> <http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia> <http://www.w3.org/2000/01/rdf-schema#comment> "The Mall of Scandinavia is a major commercial real estate in northern Stockholm. Included here as demo." .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia> <http://www.w3.org/2000/01/rdf-schema#label> "Mall of scandinavia" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1> <http://www.w3.org/2000/01/rdf-schema#comment> "An IMAX cinema room at the Mall of Scandinavia. Included here to illustrate how FooCorp can subclass the generic Cinema room type from REC's optional Building module into a more specific type of cinema room." .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1> <http://www.w3.org/2000/01/rdf-schema#label> "Mall of Scandinavia IMAX cinema room1" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> <http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1> .
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor in MoS IMAX cinema" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
