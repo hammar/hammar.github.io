@@ -1,0 +1,48 @@
+# baseURI: http://karlhammar.com/ontologies/2018/rec-demo/device.ttl
+# imports: http://karlhammar.com/ontologies/2018/rec-demo/core.ttl
+
+@prefix : <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#> .
+@prefix core: <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl>
+  rdf:type owl:Ontology ;
+  rdfs:comment "This is the optional RealEstateCore Device module, listing notions that are common in the device field but which are not generic enough to be included in RealEstateCore itself." ;
+  rdfs:label "REC Device Module" ;
+  owl:imports <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl> ;
+  owl:versionIRI <http://karlhammar.com/ontologies/2018/rec-demo/1.0/device.ttl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:BACnetConfiguration
+  rdf:type owl:Class ;
+  rdfs:label "BACnet configuration" ;
+  rdfs:subClassOf core:DeviceConfiguration ;
+.
+:CO2Sensor
+  rdf:type owl:Class ;
+  rdfs:label "CO2 Sensor" ;
+  rdfs:subClassOf core:Sensor ;
+.
+:KNXConfiguration
+  rdf:type owl:Class ;
+  rdfs:label "KNX Configuration" ;
+  rdfs:subClassOf core:DeviceConfiguration ;
+.
+:LoRaConfiguration
+  rdf:type owl:Class ;
+  rdfs:label "LoRa configuration" ;
+  rdfs:subClassOf core:DeviceConfiguration ;
+.
+:MBusConfiguration
+  rdf:type owl:Class ;
+  rdfs:label "MBus configuration" ;
+  rdfs:subClassOf core:DeviceConfiguration ;
+.
+:TemperatureSensor
+  rdf:type owl:Class ;
+  rdfs:label "Temperature sensor" ;
+  rdfs:subClassOf core:Sensor ;
+.
