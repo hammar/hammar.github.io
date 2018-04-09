@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#"
+     xml:base="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl"
+     xmlns:core="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl">
+        <owl:imports rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl"/>
+        <owl:imports rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an ontology intended to illustrate the use of RealEstateCore (REC) and how the REC core and optional modules can be extended by a real estate company to support data modelling for their properties.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FooCorp Configuration Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with TopBraid Composer</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atrium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auditorium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Back office</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bathroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cinema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleaning room</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloak room</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BACnet configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2 Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNX Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LoRa configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBus configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IMAX cinema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indoor temperature sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#OutdoorTemperatureSensor -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#OutdoorTemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outdoor temperature sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia -->
+
+
+    <owl:NamedIndividual rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinavia">
+        <rdf:type rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure"/>
+        <core:hasBuildingStructureComponent rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Mall of Scandinavia is a major commercial real estate in northern Stockholm. Included here as demo.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mall of scandinavia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1">
+        <rdf:type rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#ImaxCinema"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An IMAX cinema room at the Mall of Scandinavia. Included here to illustrate how FooCorp can subclass the generic Cinema room type from REC&apos;s optional Building module into a more specific type of cinema room.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mall of Scandinavia IMAX cinema room1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema -->
+
+
+    <owl:NamedIndividual rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#TemperatureSensorInMosImaxCinema">
+        <rdf:type rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#IndoorTemperatureSensor"/>
+        <core:deviceLocatedInRoom rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#MallOfScandinaviaImaxCinemaRoom1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature sensor in MoS IMAX cinema</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
