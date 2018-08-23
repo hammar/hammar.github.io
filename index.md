@@ -10,7 +10,7 @@ layout: default
 
 ![Karl Hammar](http://karlhammar.com/images/karl.jpg){: itemprop="image"}
 
-I am a lecturer in computer technologies at <a itemprop="worksFor" href="http://ju.se/"><span itemscope itemtype="http://schema.org/CollegeOrUniversity" itemid="http://ju.se/"><span itemprop="name">Jönköping University</span></span></a>, where I develop and manage the [Software Engineering and Mobile Platforms](http://ju.se/jth/utbildning/ingenjorsprogram/mjukvaruutveckling-och-mobila-plattformar.html) bachelor program. I'm also a computer science researcher, focusing on Ontology Design Patterns for the Semantic Web. My research concerns methods and tools for usefully employing such patterns in different ontology engineering scenarios, a problem which is studied from both technical and a usability-oriented perspectives.
+I am a lecturer in computer technologies at <a itemprop="worksFor" href="http://ju.se/"><span itemscope itemtype="http://schema.org/CollegeOrUniversity" itemid="http://ju.se/"><span itemprop="name">Jönköping University</span></span></a>. I'm also a computer science researcher, working with knowledge representation and ontologies for the Semantic Web. My research focuses on the development of methods and tools supporting ontology engineering in real-world scenarios, ranging from building automation to veterinary syndromic surveillance.
 
 Karlhammar.com is my personal web page, which I update occasionally but not overly frequently. It holds various things that I am involved in that may also be of interest to others.
 
