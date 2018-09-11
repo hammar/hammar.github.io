@@ -3,7 +3,7 @@
 
   <div class="wrapper">
 
-  <header id="footer-heading"><a href="https://karlhammar.com">{{ site.title }}</a></header>
+  <header id="footer-heading"><a href="{{site.url}}">{{ site.title }}</a></header>
 
     <div id="footer-col-wrapper">
       <div class="footer-col" id="footer-col-1">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="footer-col" id="footer-col-2">
-        <ul id="social-media-list" itemscope itemid="https://karlhammar.com{{page.url}}" itemtype="https://schema.org/WebPage">
+        <ul id="social-media-list" itemscope itemid="{{page.url | prepend: site.url}}" itemtype="https://schema.org/WebPage">
           <li><a itemprop="relatedLink" href="https://github.com/hammar"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">hammar</span></a></li>
           <li><a itemprop="relatedLink" href="https://twitter.com/karlhammar"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">karlhammar</span></a></li>
         </ul>

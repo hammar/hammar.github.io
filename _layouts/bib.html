@@ -1,15 +1,15 @@
 ---
 ---
 
-<div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://karlhammar.com/publications/#{{key}}">
+<div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="{{key | prepend: "#" | prepend: site.url}}">
   {{ reference }}
   {% if links.zip or links.pdf %}
     {% if links.pdf %}
-      <br /><a itemprop="associatedMedia" href="https://karlhammar.com{{links.pdf}}">Download (PDF) &raquo;</a>
+      <br /><a itemprop="associatedMedia" href="{{links.pdf}}">Download (PDF) &raquo;</a>
     {% else %}
-      <br /><a itemprop="associatedMedia" href="https://karlhammar.com{{links.zip}}">Download (ZIP) &raquo;</a>
+      <br /><a itemprop="associatedMedia" href="{{links.zip | prepend: site.url}}">Download (ZIP) &raquo;</a>
     {% endif %}
-    <link itemprop="image" href="https://karlhammar.com{{link}}" />
+    <link itemprop="image" href="{{link | prepend: site.url}}" />
   {% endif %}
   <span itemprop="headline" content="{{entry.title}}" />
   <span itemprop="datePublished" content="{{entry.year}}" />
