@@ -33,7 +33,7 @@ scholar:
   bibliography_template: bib
   bibliography: bibliography.bib
   bibliography_list_tag: ul
-  repository: pdfs
+  repository: "downloads"
 
 exclude:
   - README.md
