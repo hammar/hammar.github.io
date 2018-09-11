@@ -1,6 +1,6 @@
 ---
 layout: default
-#title: Home
+title: Dr Karl Hammar
 #permalink: /
 ---
 
@@ -8,7 +8,7 @@ layout: default
 
 <div itemscope itemid="https://karlhammar.com/#karl" itemtype="https://schema.org/Person" id="karl">
 
-![Karl Hammar]({{site.url}}/images/karl.jpg){: itemprop="image"}
+<img src="{{site.url}}/images/karl.jpg" alt="Karl Hammar" itemprop="image" style="float:left;" />
 
 I am a lecturer in computer technologies at <a itemprop="worksFor" href="https://ju.se/"><span itemscope itemtype="https://schema.org/CollegeOrUniversity" itemid="https://ju.se/"><span itemprop="name">Jönköping University</span></span></a>. I'm also a computer science researcher, working with knowledge representation and ontologies for the Semantic Web. My research focuses on the development of methods and tools supporting ontology engineering in real-world scenarios, ranging from building automation to veterinary syndromic surveillance.
 
