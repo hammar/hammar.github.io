@@ -3,9 +3,13 @@
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://karlhammar.com/publications/#{{key}}">
   {{ reference }}
-  {% if link %}
-  <br /><a itemprop="associatedMedia" href="https://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
-  <link itemprop="image" href="https://karlhammar.com{{link}}" />
+  {% if links.zip or links.pdf %}
+    {% if links.pdf %}
+      <br /><a itemprop="associatedMedia" href="https://karlhammar.com{{links.pdf}}">Download (PDF) &raquo;</a>
+    {% else %}
+      <br /><a itemprop="associatedMedia" href="https://karlhammar.com{{links.zip}}">Download (ZIP) &raquo;</a>
+    {% endif %}
+    <link itemprop="image" href="https://karlhammar.com{{link}}" />
   {% endif %}
   <span itemprop="headline" content="{{entry.title}}" />
   <span itemprop="datePublished" content="{{entry.year}}" />
