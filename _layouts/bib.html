@@ -1,17 +1,17 @@
 ---
 ---
 
-<div itemscope itemtype="http://schema.org/ScholarlyArticle" itemid="http://karlhammar.com/publications/#{{key}}">
+<div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://karlhammar.com/publications/#{{key}}">
   {{ reference }}
   {% if link %}
-  <br /><a itemprop="associatedMedia" href="http://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
-  <link itemprop="image" href="http://karlhammar.com{{link}}" />
+  <br /><a itemprop="associatedMedia" href="https://karlhammar.com{{link}}">Download (PDF) &raquo;</a>
+  <link itemprop="image" href="https://karlhammar.com{{link}}" />
   {% endif %}
   <span itemprop="headline" content="{{entry.title}}" />
   <span itemprop="datePublished" content="{{entry.year}}" />
 
   {% for author in entry.author_array %}
-    <div itemprop="author"  itemscope itemtype="http://schema.org/Person">
+    <div itemprop="author"  itemscope itemtype="https://schema.org/Person">
         <span itemprop="givenName" content="{{author.first}}" />
         <span itemprop="familyName" content="{{author.last}}" />
     </div>
@@ -26,16 +26,16 @@
 
 
   {% if entry.publisher %}
-  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+  <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <span itemprop="name" content="{{entry.publisher}}"></span>
   </div>
   {% endif %}
 
   {% if entry.type == "inproceedings" or entry.type == "incollection" %}
-  <div itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork">
+  <div itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork">
     <div itemprop="name" content="{{entry.booktitle}}">
       {% for editor in entry.editor_array %}
-      <div itemprop="editor" itemscope itemtype="http://schema.org/Person">
+      <div itemprop="editor" itemscope itemtype="https://schema.org/Person">
           <span itemprop="givenName" content="{{editor.first}}"></span>
           <span itemprop="familyName" content="{{editor.last}}"></span>
       </div>
@@ -45,13 +45,13 @@
   {% endif %}
 
   {% unless entry.type== "proceedings" %}
-  <span itemprop="author" content="http://karlhammar.com/#karl" />
+  <span itemprop="author" content="https://karlhammar.com/#karl" />
   {% endunless %}
 
   {% if entry.type== "proceedings" %}
-  <span itemprop="editor" content="http://karlhammar.com/#karl" />
+  <span itemprop="editor" content="https://karlhammar.com/#karl" />
   {% for editor in entry.editor_array %}
-  <div itemprop="editor" itemscope itemtype="http://schema.org/Person">
+  <div itemprop="editor" itemscope itemtype="https://schema.org/Person">
       <span itemprop="givenName" content="{{editor.first}}" />
       <span itemprop="familyName" content="{{editor.last}}" />
   </div>

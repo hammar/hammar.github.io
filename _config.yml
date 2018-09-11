@@ -8,7 +8,7 @@
 # Site settings
 title: KarlHammar.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://karlhammar.com" # the base hostname & protocol for your site
+url: "https://karlhammar.com" # the base hostname & protocol for your site
 
 # Settings for deploy Rake task
 destination: ../karlhammar.com/
