@@ -3,13 +3,15 @@
 
 <div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="{{key | prepend: "#" | prepend: site.url}}">
   {{ reference }}
-  {% if links.zip or links.pdf %}
-    {% if links.pdf %}
-      <br /><a itemprop="associatedMedia" href="{{links.pdf}}">Download (PDF) &raquo;</a>
-    {% else %}
-      <br /><a itemprop="associatedMedia" href="{{links.zip | prepend: site.url}}">Download (ZIP) &raquo;</a>
-    {% endif %}
-    <link itemprop="image" href="{{link | prepend: site.url}}" />
+  {% if links.png %}
+    <link itemprop="image" href="{{links.png | prepend: site.url}}" />
+  {% elsif links.pdf %}
+    <link itemprop="image" href="{{links.pdf | prepend: site.url}}" />
+  {% endif %}
+  {% if links.pdf %}
+    <br /><a itemprop="associatedMedia" href="{{links.pdf | prepend: site.url}}">Download (PDF) &raquo;</a>
+  {% elsif links.zip %}
+    <br /><a itemprop="associatedMedia" href="{{links.zip | prepend: site.url}}">Download (ZIP) &raquo;</a>
   {% endif %}
   <span itemprop="headline" content="{{entry.title}}" />
   <span itemprop="datePublished" content="{{entry.year}}" />
