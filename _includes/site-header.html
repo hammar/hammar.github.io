@@ -14,13 +14,11 @@
       </a>
 
       <div class="trigger">
-        {% for child_page in site.pages %}
-          {% if child_page.title %}
-            {% if child_page.url == page.url %}
-              <a class="page-link" href="{{ child_page.url | prepend: site.url }}">{{ child_page.title }}</a>
-            {% else %}
-              <a itemprop="relatedLink" class="page-link" href="{{ child_page.url | prepend: site.url }}">{{ child_page.title }}</a>
-            {% endif %}
+        {% for item in site.data.site_menu.pages %}
+          {% if item.url == page.url %}
+            <a class="page-link" href="{{ item.url | prepend: site.url }}">{{ item.title }}</a>
+          {% else %}
+            <a itemprop="relatedLink" class="page-link" href="{{ item.url | prepend: site.url }}">{{ item.title }}</a>
           {% endif %}
         {% endfor %}
       </div>

@@ -1,0 +1,16 @@
+pages:
+
+- title: Research
+  url: /research/
+
+- title: Publications
+  url: /publications/
+
+- title: Code
+  url: /code/
+
+- title: Teaching
+  url: /teaching/
+
+- title: In the Media
+  url: /in-the-media/
