@@ -8,6 +8,9 @@ The first stage of my PhD project (in Swedish the Licentiate or PhL degree) conc
 
 Below you'll find some more information about my research contributions. You can also visit the [publications page](/publications/) for a full list of papers I've authored.
 
+## Projects
+* *Building Knowledge -- Modular Knowledge Graphs Enabling Adaptive Real Estate* (2019-2020). A 4.8 MSEK (455 000 €) postdoctoral project funded by the [Knowledge Foundation](http://www.kks.se/) under the KK Prospect grant programme. The goal of the project is to explore the intersection of semantic knowledge graphs and machine learning technologies, and to develop and evaluate approaches to modular ontology engineering based on design patterns. Co-production partners from industry: [Vasakronan](https://vasakronan.se/), [Akademiska Hus](https://www.akademiskahus.se/), [Willhem](https://willhem.se/), and [Klipsk](https://klipsk.io/).
+
 ## Awards
 * *Future Organisation of the Year* award by [Energieffektiviseringsföretagen](https://www.eef.se/) for the [RealEstateCore](https://www.realestatecore.io/) initiative
 * Student project 2nd price at [ESCW Summer School 2012](http://summerschool2012.eswc-conferences.org/) for the [OntoTouch](http://www.ontotouch.com/) project
@@ -32,6 +35,7 @@ Below you'll find some more information about my research contributions. You can
 
 ## Research support
 
+* Reviewer for the [Journal of Web Semantics](https://www.journals.elsevier.com/journal-of-web-semantics)
 * Reviewer for [ESWC 2019](https://2019.eswc-conferences.org/)
 * Reviewer for [ISWC 2018](https://iswc2018.semanticweb.org)
 * Reviewer for [SEMANTiCS 2018](https://2018.semantics.cc/)
