@@ -19,8 +19,8 @@ branch: source
 # Build settings
 markdown: kramdown
 
-# Gems
-gems: ['jekyll/scholar']
+# Plugins
+plugins: ['jekyll/scholar']
 
 # Jekyll-scholar configuration
 scholar:
