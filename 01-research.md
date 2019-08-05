@@ -35,7 +35,9 @@ Below you'll find some more information about my research contributions. You can
 
 ## Research support
 
+* Reviewer for the [Semantic Web Journal](http://www.semantic-web-journal.net/)
 * Reviewer for the [Journal of Web Semantics](https://www.journals.elsevier.com/journal-of-web-semantics)
+* Reviewer for [ISWC 2019](https://iswc2019.semanticweb.org/)
 * Reviewer for [ESWC 2019](https://2019.eswc-conferences.org/)
 * Reviewer for [ISWC 2018](https://iswc2018.semanticweb.org)
 * Reviewer for [SEMANTiCS 2018](https://2018.semantics.cc/)
