@@ -1,12 +1,18 @@
 ---
 ---
 
-<div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="{{key | prepend: "#" | prepend: site.url}}">
+{% if entry.type == "proceedings" %}
+  <div itemscope itemtype="https://schema.org/Collection" itemid="{{key | prepend: "#" | prepend: site.url}}">
+{% else %}
+  <div itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="{{key | prepend: "#" | prepend: site.url}}">
+{%endif %}
   {{ reference }}
   {% if links.png %}
-    <link itemprop="image" href="{{links.png | prepend: site.url}}" />
+    <span itemprop="image" content="{{links.png | prepend: site.url}}" />
+    <span itemprop="mainEntityOfPage" content="{{links.png | prepend: site.url}}" />
   {% elsif links.pdf %}
-    <link itemprop="image" href="{{links.pdf | prepend: site.url}}" />
+    <span itemprop="image" content="{{links.pdf | prepend: site.url}}" />
+    <span itemprop="mainEntityOfPage" content="{{links.pdf | prepend: site.url}}" />
   {% endif %}
   {% if links.pdf %}
     <br /><a itemprop="associatedMedia" href="{{links.pdf | prepend: site.url}}">Download (PDF) &raquo;</a>
@@ -15,11 +21,13 @@
   {% endif %}
   <span itemprop="headline" content="{{entry.title}}" />
   <span itemprop="datePublished" content="{{entry.year}}" />
+  <span itemprop="dateModified" content="{{entry.year}}" />
 
   {% for author in entry.author_array %}
     <div itemprop="author"  itemscope itemtype="https://schema.org/Person">
         <span itemprop="givenName" content="{{author.first}}" />
         <span itemprop="familyName" content="{{author.last}}" />
+        <span itemprop="name" content="{{author.first}} {{author.last}}" />
     </div>
   {% endfor %}
 
@@ -35,6 +43,14 @@
   <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <span itemprop="name" content="{{entry.publisher}}"></span>
   </div>
+  {% else %}
+    {% for author in entry.author_array %}
+      <div itemprop="publisher"  itemscope itemtype="https://schema.org/Person">
+          <span itemprop="givenName" content="{{author.first}}" />
+          <span itemprop="familyName" content="{{author.last}}" />
+          <span itemprop="name" content="{{author.first}} {{author.last}}" />
+      </div>
+    {% endfor %}
   {% endif %}
 
   {% if entry.type == "inproceedings" or entry.type == "incollection" %}
