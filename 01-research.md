@@ -10,6 +10,7 @@ Below you'll find some more information about my research contributions. You can
 
 ## Projects
 * *Building Knowledge -- Modular Knowledge Graphs Enabling Adaptive Real Estate* (2019-2020). A 4.8 MSEK (455 000 €) postdoctoral project funded by the [Knowledge Foundation](http://www.kks.se/) under the KK Prospect grant programme. The goal of the project is to explore the intersection of semantic knowledge graphs and machine learning technologies, and to develop and evaluate approaches to modular ontology engineering based on design patterns. Co-production partners from industry: [Vasakronan](https://vasakronan.se/), [Akademiska Hus](https://www.akademiskahus.se/), [Willhem](https://willhem.se/), and [Klipsk](https://klipsk.io/).
+* [RealEstateCore](https://realestatecore.io). The RealEstateCore Consortium supports the development of the RealEstateCore ontology and associated specifications, API:s, components, etc. The School of Engineering at Jönköping University is a founding member of the consortium; I represent the university in the consortium's governing board, and on the technical committee.
 
 ## Awards
 * *Future Organisation of the Year* award by [Energieffektiviseringsföretagen](https://www.eef.se/) for the [RealEstateCore](https://www.realestatecore.io/) initiative
@@ -22,6 +23,7 @@ Below you'll find some more information about my research contributions. You can
 * Speaker at [Ontology Summit 2014](http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2014) Track C: Overcoming Ontology Engineering Bottlenecks -- Strategies and Building Blocks. Title of the talk: "[Reasoning Performance Indicators for Ontology Design Patterns](http://ontolog.cim3.net/file/work/OntologySummit2014/2014-02-06_OntologySummit2014_Overcoming-Ontology-Engineering-Bottlenecks-1/OntologySummit2014_ODP-Reasoning-Indicators--KarlHammar_20140206.pdf)". Audio and transcripts available at [OntoLog](http://ontolog.cim3.net/cgi-bin/wiki.pl?ConferenceCall_2014_02_06). 2014-02-06
 
 ## Conferences and workshops
+* Workshop chair of the [22nd International Conference on Knowledge Engineering and Knowledge Management](https://ekaw2020.inf.unibz.it)
 * Proceedings chair of the [16th European Semantic Web Conference](https://2019.eswc-conferences.org/)
 * Patterns co-chair of the [10th Workshop on Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/WOP:2019) at [ISWC 2019](http://iswc2019.semanticweb.org/)
 * Patterns co-chair of the [9th Workshop on Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/WOP:2018) at [ISWC 2018](http://iswc2018.semanticweb.org/)
@@ -37,8 +39,10 @@ Below you'll find some more information about my research contributions. You can
 
 * Reviewer for the [Semantic Web Journal](http://www.semantic-web-journal.net/)
 * Reviewer for the [Journal of Web Semantics](https://www.journals.elsevier.com/journal-of-web-semantics)
+* Reviewer for [ESWC 2020](https://2020.eswc-conferences.org)
 * Reviewer for [ISWC 2019](https://iswc2019.semanticweb.org/)
 * Reviewer for [ESWC 2019](https://2019.eswc-conferences.org/)
+* Reviewer for [CoopIS 2019](http://www.otmconferences.org/index.php/conferences/coopis20/8-conferences/97-coopis-2019)
 * Reviewer for [ISWC 2018](https://iswc2018.semanticweb.org)
 * Reviewer for [SEMANTiCS 2018](https://2018.semantics.cc/)
 * Assistant reviewer for [FLINS 2018](http://scm.ulster.ac.uk/FLINS2018/)
