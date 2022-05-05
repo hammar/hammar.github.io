@@ -9,10 +9,17 @@ My PhD project focused on improvent to methods and tooling for development and u
 Below you'll find some more information about my research contributions. You can also visit the [publications page](/publications/) for a full list of papers I've authored.
 
 ## Projects
-* *Building Knowledge -- Modular Knowledge Graphs Enabling Adaptive Real Estate* (2019-2020). A 4.8 MSEK (455 000 €) postdoctoral project funded by the [Knowledge Foundation](http://www.kks.se/) under the KK Prospect grant programme. The goal of the project is to explore the intersection of semantic knowledge graphs and machine learning technologies, and to develop and evaluate approaches to modular ontology engineering based on design patterns. Co-production partners from industry: [Vasakronan](https://vasakronan.se/), [Akademiska Hus](https://www.akademiskahus.se/), [Willhem](https://willhem.se/), and [Klipsk](https://klipsk.io/).
-* [RealEstateCore](https://realestatecore.io). The RealEstateCore Consortium supports the development of the RealEstateCore ontology and associated specifications, API:s, components, etc. The School of Engineering at Jönköping University is a founding member of the consortium; I represent the university in the consortium's governing board, and on the technical committee.
+* *Building Knowledge -- Modular Knowledge Graphs Enabling Adaptive Real Estate* (2019-2021). A 4.8 MSEK (455 000 €) project funded by the [Knowledge Foundation](http://www.kks.se/) under the KK Prospect grant programme. The goal of the project is to explore the intersection of semantic knowledge graphs and machine learning technologies, and to develop and evaluate approaches to modular ontology engineering based on design patterns. Co-production partners from industry: [Vasakronan](https://vasakronan.se/), [Akademiska Hus](https://www.akademiskahus.se/), [Willhem](https://willhem.se/), and [Klipsk](https://klipsk.io/).
+* [RealEstateCore](https://realestatecore.io). The RealEstateCore Consortium supports the development of the RealEstateCore ontology and associated specifications, API:s, components, etc. I am a founding member of the consortium; I represent Jönköping University in the consortium's governing board, and on the technical committee.
+
+## Roles and assignments
+
+* Member of the Editorial Board of the [Semantic Web Journal](http://semantic-web-journal.net), 2021–
+* Vice Chair of the [Association for Ontology Design and Patterns (ODPA)](http://ontologydesignpatterns.org/wiki/ODPA), 2016–
+* Co-Chair of the [W3C Linked Building Data Community Group (LBD CG)](https://www.w3.org/community/lbd/), 2021–
 
 ## Awards
+* The *2022 SPARK Award* for best research project at Jönköping University, for the Building Knowledge project.
 * *Future Organisation of the Year* award by [Energieffektiviseringsföretagen](https://www.eef.se/) for the [RealEstateCore](https://www.realestatecore.io/) initiative
 * Student project 2nd price at [ESCW Summer School 2012](http://summerschool2012.eswc-conferences.org/) for the [OntoTouch](http://www.ontotouch.com/) project
 
@@ -23,7 +30,10 @@ Below you'll find some more information about my research contributions. You can
 * Speaker at [Ontology Summit 2014](http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2014) Track C: Overcoming Ontology Engineering Bottlenecks -- Strategies and Building Blocks. Title of the talk: "[Reasoning Performance Indicators for Ontology Design Patterns](http://ontolog.cim3.net/file/work/OntologySummit2014/2014-02-06_OntologySummit2014_Overcoming-Ontology-Engineering-Bottlenecks-1/OntologySummit2014_ODP-Reasoning-Indicators--KarlHammar_20140206.pdf)". Audio and transcripts available at [OntoLog](http://ontolog.cim3.net/cgi-bin/wiki.pl?ConferenceCall_2014_02_06). 2014-02-06
 
 ## Conferences and workshops
+* Co-chair of the [Joint Ontology Workshops (JOWO) 2022](https://www.iaoa.org/jowo/2022/)
+* General chair of the [12th Workshop on Ontology Design and Patterns (WOP)]((http://ontologydesignpatterns.org/wiki/WOP:2021)) at [ISWC 2021](https://iswc2021.semanticweb.org)
 * Workshop chair of the [22nd International Conference on Knowledge Engineering and Knowledge Management](https://ekaw2020.inf.unibz.it)
+* Proceedings chair of the [Joint Ontology Workshops (JOWO) 2020](https://www.iaoa.org/jowo/2020/)
 * Proceedings chair of the [16th European Semantic Web Conference](https://2019.eswc-conferences.org/)
 * Patterns co-chair of the [10th Workshop on Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/WOP:2019) at [ISWC 2019](http://iswc2019.semanticweb.org/)
 * Patterns co-chair of the [9th Workshop on Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/WOP:2018) at [ISWC 2018](http://iswc2018.semanticweb.org/)
@@ -35,10 +45,11 @@ Below you'll find some more information about my research contributions. You can
 * Chair of the *Workshop on Semantic Web Enterprise Adoption and Best Practice (WaSABi)* at [ISWC 2013](http://iswc2013.semanticweb.org/)
 * Pattern co-chair of the [3rd Workshop on Ontology Patterns](http://ontologydesignpatterns.org/wiki/WOP:2012) at [ISCW 2012](http://iswc2012.semanticweb.org/)
 
-## Research support
+## Reviewing support
 
 * Reviewer for the [Semantic Web Journal](http://www.semantic-web-journal.net/)
 * Reviewer for the [Journal of Web Semantics](https://www.journals.elsevier.com/journal-of-web-semantics)
+* Reviewer for [JOWO 2021](https://www.iaoa.org/jowo/2021/)
 * Reviewer for [ESWC 2020](https://2020.eswc-conferences.org)
 * Reviewer for [ISWC 2019](https://iswc2019.semanticweb.org/)
 * Reviewer for [ESWC 2019](https://2019.eswc-conferences.org/)
