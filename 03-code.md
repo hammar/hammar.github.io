@@ -4,7 +4,9 @@ title: Code
 permalink: /code/
 ---
 
-Below you will find a subset of the code that I've been involved in and that has been publicly released.
+My most noteworthy contributions have been through the [RealEstateCore project](https://www.realestatecore.io), and are available through the [RealEstateCore GitHub organization](https://github.com/RealEstateCore/).
+
+Below you will find a subset of other code that I've been involved in and that has been publicly released.
 
 ## Semantic tools
 

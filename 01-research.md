@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-My PhD project focused on improvent to methods and tooling for development and use of high-quality Ontology Design Patterns. Subsequently I have begun exploring challenges in ontology visualisation, modularisation, and the decoupling of ontology interface and implementation.
+My PhD project focused on improvent to methods and tooling for development and use of high-quality Ontology Design Patterns. Subsequently I have begun exploring challenges in ontology visualisation, modularisation, and the decoupling of ontology interface and implementation. Recently I have worked primarily on the [RealEstateCore project](https://www.realestatecore.io).
 
 Below you'll find some more information about my research contributions. You can also visit the [publications page](/publications/) for a full list of papers I've authored.
 
