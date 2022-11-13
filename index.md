@@ -8,7 +8,7 @@ title: Dr Karl Hammar
 
 <div itemscope itemid="https://karlhammar.com/#karl" itemtype="https://schema.org/Person" id="karl">
 
-<img src="{{site.url}}/images/karl.jpg" alt="Karl Hammar" itemprop="image" style="float:left;" />
+<img src="{{site.url}}/images/karl.jpg" alt="Karl Hammar" itemprop="image" style="float:left; margin-right: 1em;" />
 
 I am a computer scientist and software developer. Research-wise I work with knowledge representation and ontologies for the Semantic Web; specifically, I focus on methods and tools supporting ontology engineering in real-world scenarios, ranging from building automation to veterinary syndromic surveillance.
 
