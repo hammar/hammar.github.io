@@ -4,6 +4,12 @@ title: In the Media
 permalink: /in-the-media/
 ---
 
+## [2022-04-22: Karl Hammar awarded during the SPARK conference](https://ju.se/en/about-us/contact-and-press/press/news/news-archive/2022-04-22-karl-hammar-awarded-during-the-spark-conference.html)
+
+<img src="/images/spark-award.png" alt="SPARK Award 2022" style="max-width: 600px;" />
+
+Article from Jönköping University when I was awarded the 2022 SPARK Award for Best Resarch Project.
+
 ## 2019-03-21: Energi & Miljö: Framtidens stad övervakar sig själv
 
 [<img src="/images/em-2019-3-4.jpg" alt="Energi & Miljö No. 3-4 2019" style="max-width: 200px;" />](/images/em-2019-3-4.jpg)
