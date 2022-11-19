@@ -10,12 +10,6 @@ title: Hammar.dev
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hammar.dev" # the base hostname & protocol for your site
 
-# Settings for deploy Rake task
-destination: ../karlhammar.com/
-username: hammar
-repo: hammar.github.io
-branch: source
-
 # Build settings
 markdown: kramdown
 
@@ -43,5 +37,4 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - vendor
-  - .travis.yml
   - .gitignore
