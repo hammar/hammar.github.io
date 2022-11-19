@@ -6,15 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: KarlHammar.com
+title: Hammar.dev
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://karlhammar.com" # the base hostname & protocol for your site
-
-# Settings for deploy Rake task
-destination: ../karlhammar.com/
-username: hammar
-repo: hammar.github.io
-branch: source
+url: "https://hammar.dev" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
