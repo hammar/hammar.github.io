@@ -5,7 +5,7 @@ title: Dr Karl Hammar
 
 {::options parse_block_html="true" /}
 
-<div itemscope itemid="https://karlhammar.com/#karl" itemtype="https://schema.org/Person" id="karl">
+<div itemscope itemid="https://hammar.dev/#karl" itemtype="https://schema.org/Person" id="karl">
 
 <img src="{{site.url}}/images/karl.jpg" alt="Karl Hammar" itemprop="image" style="float:left; margin-right: 1em;" />
 

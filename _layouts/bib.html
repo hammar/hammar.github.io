@@ -67,11 +67,11 @@
   {% endif %}
 
   {% unless entry.type== "proceedings" %}
-  <span itemprop="author" content="https://karlhammar.com/#karl" />
+  <span itemprop="author" content="https://hammar.dev/#karl" />
   {% endunless %}
 
   {% if entry.type== "proceedings" %}
-  <span itemprop="editor" content="https://karlhammar.com/#karl" />
+  <span itemprop="editor" content="https://hammar.dev/#karl" />
   {% for editor in entry.editor_array %}
   <div itemprop="editor" itemscope itemtype="https://schema.org/Person">
       <span itemprop="givenName" content="{{editor.first}}" />
