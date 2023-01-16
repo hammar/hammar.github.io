@@ -16,7 +16,7 @@ Below you'll find some more information about my research contributions. You can
 
 * Member of the Editorial Board of the [Semantic Web Journal](http://semantic-web-journal.net), 2021–
 * Vice Chair of the [Association for Ontology Design and Patterns (ODPA)](http://ontologydesignpatterns.org/wiki/ODPA), 2016–
-* Co-Chair of the [W3C Linked Building Data Community Group (LBD CG)](https://www.w3.org/community/lbd/), 2021–
+* Co-Chair of the [W3C Linked Building Data Community Group (LBD CG)](https://www.w3.org/community/lbd/), 2021–2022
 
 ## Awards
 * The *2022 SPARK Award* for best research project at Jönköping University, for the Building Knowledge project.
@@ -24,6 +24,7 @@ Below you'll find some more information about my research contributions. You can
 * Student project 2nd price at [ESCW Summer School 2012](http://summerschool2012.eswc-conferences.org/) for the [OntoTouch](http://www.ontotouch.com/) project
 
 ## Invited talks
+* Keynote speaker at the [13th Workshop on Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/WOP:2022) ([see video on talks page](/talks/)).
 * Speaker at Senioruniversitetet Jönköping. Title of the talk: "Our Smart New World" (Swedish). 2018-09-17
 * Keynote speaker at Cybercom Group Jönköping staff conference 2017. 2017-05-15
 * Speaker at [Smart Buildings, Big Data, Crime, and more](https://www.meetup.com/Swedish-Semantic-Practitioners/events/239452159/), inaugural meeting of the [Swedish Semantic Practitioners](https://www.meetup.com/Swedish-Semantic-Practitioners/) meetup group. 2017-05-09

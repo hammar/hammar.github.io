@@ -4,10 +4,8 @@ title: Teaching
 permalink: /teaching/
 ---
 
-I presently have no assigned teaching duties, though I occasionally give guest lectures on a variety of subjects.
+I've taught courses on bachelor and master level, including: 
 
-## Past courses
-* BSc Thesis Project Course
 * iOS Development
 * Object Oriented Software Development
 * Development of Distributed Applications
