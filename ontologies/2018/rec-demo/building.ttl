@@ -1,0 +1,53 @@
+# baseURI: http://karlhammar.com/ontologies/2018/rec-demo/building.ttl
+# imports: http://karlhammar.com/ontologies/2018/rec-demo/core.ttl
+
+@prefix : <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#> .
+@prefix core: <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl>
+  rdf:type owl:Ontology ;
+  rdfs:comment "This is the optional RealEstateCore Building module, listing notions that are common in the building field but which are not generic enough to be included in RealEstateCore itself." ;
+  rdfs:label "REC Building Module" ;
+  owl:imports <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl> ;
+  owl:versionIRI <http://karlhammar.com/ontologies/2018/rec-demo/1.0/building.ttl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:Atrium
+  rdf:type owl:Class ;
+  rdfs:label "Atrium" ;
+  rdfs:subClassOf core:Room ;
+.
+:Auditorium
+  rdf:type owl:Class ;
+  rdfs:label "Auditorium" ;
+  rdfs:subClassOf core:Room ;
+.
+:BackOffice
+  rdf:type owl:Class ;
+  rdfs:label "Back office" ;
+  rdfs:subClassOf core:Room ;
+.
+:Bathroom
+  rdf:type owl:Class ;
+  rdfs:label "Bathroom" ;
+  rdfs:subClassOf core:Room ;
+.
+:Cinema
+  rdf:type owl:Class ;
+  rdfs:label "Cinema" ;
+  rdfs:subClassOf core:Room ;
+.
+:CleaningRoom
+  rdf:type owl:Class ;
+  rdfs:label "Cleaning room" ;
+  rdfs:subClassOf core:Room ;
+.
+:CloakRoom
+  rdf:type owl:Class ;
+  rdfs:label "Cloak room" ;
+  rdfs:subClassOf core:Room ;
+.
