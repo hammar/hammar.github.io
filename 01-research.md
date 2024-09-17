@@ -14,8 +14,8 @@ Below you'll find some more information about my research contributions. You can
 
 ## Roles and assignments
 
-* Member of the Editorial Board of the [Semantic Web Journal](http://semantic-web-journal.net), 2021–
-* Vice Chair of the [Association for Ontology Design and Patterns (ODPA)](http://ontologydesignpatterns.org/wiki/ODPA), 2016–
+* Member of the Editorial Board of the [Semantic Web Journal](http://semantic-web-journal.net), 2021–2023
+* Vice Chair of the [Association for Ontology Design and Patterns (ODPA)](http://ontologydesignpatterns.org/wiki/ODPA), 2016–2022
 * Co-Chair of the [W3C Linked Building Data Community Group (LBD CG)](https://www.w3.org/community/lbd/), 2021–2022
 
 ## Awards
