@@ -1,0 +1,52 @@
+# baseURI: http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl
+# imports: http://karlhammar.com/ontologies/2018/rec-demo/building.ttl
+# imports: http://karlhammar.com/ontologies/2018/rec-demo/device.ttl
+
+@prefix : <http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl#> .
+@prefix building: <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#> .
+@prefix core: <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#> .
+@prefix device: <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://karlhammar.com/ontologies/2018/rec-demo/foocorp.ttl>
+  rdf:type owl:Ontology ;
+  rdfs:comment "This is an ontology intended to illustrate the use of RealEstateCore (REC) and how the REC core and optional modules can be extended by a real estate company to support data modelling for their properties." ;
+  rdfs:label "FooCorp Configuration Ontology" ;
+  owl:imports <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> ;
+  owl:imports <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:ImaxCinema
+  rdf:type owl:Class ;
+  rdfs:label "IMAX cinema" ;
+  rdfs:subClassOf building:Cinema ;
+.
+:IndoorTemperatureSensor
+  rdf:type owl:Class ;
+  rdfs:label "Indoor temperature sensor" ;
+  rdfs:subClassOf device:TemperatureSensor ;
+.
+:MallOfScandinavia
+  rdf:type core:BuildingStructure ;
+  core:hasBuildingStructureComponent :MallOfScandinaviaImaxCinemaRoom1 ;
+  rdfs:comment "The Mall of Scandinavia is a major commercial real estate in northern Stockholm. Included here as demo." ;
+  rdfs:label "Mall of scandinavia" ;
+.
+:MallOfScandinaviaImaxCinemaRoom1
+  rdf:type :ImaxCinema ;
+  rdfs:comment "An IMAX cinema room at the Mall of Scandinavia. Included here to illustrate how FooCorp can subclass the generic Cinema room type from REC's optional Building module into a more specific type of cinema room." ;
+  rdfs:label "Mall of Scandinavia IMAX cinema room1" ;
+.
+:OutdoorTemperatureSensor
+  rdf:type owl:Class ;
+  rdfs:label "Outdoor temperature sensor" ;
+  rdfs:subClassOf device:TemperatureSensor ;
+.
+:TemperatureSensorInMosImaxCinema
+  rdf:type :IndoorTemperatureSensor ;
+  core:deviceLocatedInRoom :MallOfScandinaviaImaxCinemaRoom1 ;
+  rdfs:label "Temperature sensor in MoS IMAX cinema" ;
+.
