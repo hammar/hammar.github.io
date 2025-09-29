@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#"
+     xml:base="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl">
+        <owl:versionIRI rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/1.0/building.ttl"/>
+        <owl:imports rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is the optional RealEstateCore Building module, listing notions that are common in the building field but which are not generic enough to be included in RealEstateCore itself.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REC Building Module</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with TopBraid Composer</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure"/>
+                    <rdf:Description rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belongs to real estate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom">
+        <owl:inverseOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">device located in room</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent">
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has building structure component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration">
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has device configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation">
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">makes observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy">
+        <owl:inverseOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation"/>
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">observation made by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice -->
+
+
+    <owl:ObjectProperty rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice">
+        <rdfs:domain rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:range rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">room has device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atrium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auditorium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Back office</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bathroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cinema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleaning room</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloak room</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An actuator is a component that is responsible for moving and controlling a mechanism or system.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Actuator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The human or machine that consumes or acts upon an object or data.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confined building structure.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Building structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The parts that makes up a building structure (BuildingStructure). E.g. Room, Facade, Roof, etc.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Building structure component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thing made or adapted for a particular purpose, specifically a piece of electronic equipment. A Device has one or more Sensor(s) and/or Actuator(s).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A configuration for a device. What this specifically entails in terms of properties and classes is left to implementers and submodule designers to define. The REC module Device (http://karlhammar.com/ontologies/2018/rec-demo/device.ttl) provides a common set of standard configurations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Device configuration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/device.ttl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Facade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The land where one or more buildings are situated.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation of a phenomena. Made by a Sensor. Has a Value.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal entity. Land + buildings.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real estate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roof</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confined space by walls or other line of separation. The REC module Building (http://karlhammar.com/ontologies/2018/rec-demo/building.ttl) provides a set of common room types.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Room</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/building.ttl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor -->
+
+
+    <owl:Class rdf:about="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor">
+        <rdfs:subClassOf rdf:resource="http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thing which detects or measures a physical property and records, indicates, or otherwise responds to it.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

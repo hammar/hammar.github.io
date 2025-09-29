@@ -1,0 +1,208 @@
+@prefix : <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> .
+
+<http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> rdf:type owl:Ontology ;
+                                                             owl:versionIRI <http://karlhammar.com/ontologies/2018/rec-demo/1.0/device.ttl> ;
+                                                             owl:imports <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl> ;
+                                                             rdfs:comment "This is the optional RealEstateCore Device module, listing notions that are common in the device field but which are not generic enough to be included in RealEstateCore itself."^^xsd:string ;
+                                                             rdfs:label "REC Device Module"^^xsd:string ;
+                                                             owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure>
+                                                                                                          <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land>
+                                                                                                        )
+                                                                                          ] ;
+                                                                              rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> ;
+                                                                              rdfs:label "belongs to real estate"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> rdf:type owl:ObjectProperty ;
+                                                                              owl:inverseOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> ;
+                                                                              rdfs:domain <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> ;
+                                                                              rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> ;
+                                                                              rdfs:label "device located in room"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:domain <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> ;
+                                                                                        rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> ;
+                                                                                        rdfs:label "has building structure component"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> ;
+                                                                                 rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> ;
+                                                                                 rdfs:label "has device configuration"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> ;
+                                                                           rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> ;
+                                                                           rdfs:label "makes observation"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy> rdf:type owl:ObjectProperty ;
+                                                                            owl:inverseOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> ;
+                                                                            rdfs:domain <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> ;
+                                                                            rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> ;
+                                                                            rdfs:label "observation made by"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> ;
+                                                                        rdfs:range <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> ;
+                                                                        rdfs:label "room has device"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> ;
+                                                                   rdfs:comment "An actuator is a component that is responsible for moving and controlling a mechanism or system."^^xsd:string ;
+                                                                   rdfs:label "Actuator"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent> rdf:type owl:Class ;
+                                                                rdfs:subClassOf owl:Thing ;
+                                                                rdfs:comment "The human or machine that consumes or acts upon an object or data."^^xsd:string ;
+                                                                rdfs:label "Agent"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> ;
+                                                                            rdfs:comment "Confined building structure."^^xsd:string ;
+                                                                            rdfs:label "Building structure"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf owl:Thing ;
+                                                                                     rdfs:comment "The parts that makes up a building structure (BuildingStructure). E.g. Room, Facade, Roof, etc."^^xsd:string ;
+                                                                                     rdfs:label "Building structure component"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf owl:Thing ;
+                                                                 rdfs:comment "A thing made or adapted for a particular purpose, specifically a piece of electronic equipment. A Device has one or more Sensor(s) and/or Actuator(s)."^^xsd:string ;
+                                                                 rdfs:label "Device"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf owl:Thing ;
+                                                                              rdfs:comment "A configuration for a device. What this specifically entails in terms of properties and classes is left to implementers and submodule designers to define. The REC module Device (http://karlhammar.com/ontologies/2018/rec-demo/device.ttl) provides a common set of standard configurations."^^xsd:string ;
+                                                                              rdfs:isDefinedBy <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> ;
+                                                                              rdfs:label "Device configuration"^^xsd:string ;
+                                                                              rdfs:seeAlso <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> ;
+                                                                 rdfs:label "Facade"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> ;
+                                                               rdfs:comment "The land where one or more buildings are situated."^^xsd:string ;
+                                                               rdfs:label "Land"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf owl:Thing ;
+                                                                      rdfs:comment "Observation of a phenomena. Made by a Sensor. Has a Value."^^xsd:string ;
+                                                                      rdfs:label "Observation"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf owl:Thing ;
+                                                                     rdfs:comment "Legal entity. Land + buildings."^^xsd:string ;
+                                                                     rdfs:label "Real estate"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> ;
+                                                               rdfs:label "Roof"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> ;
+                                                               rdfs:comment "Confined space by walls or other line of separation. The REC module Building (http://karlhammar.com/ontologies/2018/rec-demo/building.ttl) provides a set of common room types."^^xsd:string ;
+                                                               rdfs:isDefinedBy <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> ;
+                                                               rdfs:label "Room"^^xsd:string ;
+                                                               rdfs:seeAlso <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> ;
+                                                                 rdfs:comment "Thing which detects or measures a physical property and records, indicates, or otherwise responds to it."^^xsd:string ;
+                                                                 rdfs:label "Sensor"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#BACnetConfiguration
+:BACnetConfiguration rdf:type owl:Class ;
+                     rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> ;
+                     rdfs:label "BACnet configuration"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#CO2Sensor
+:CO2Sensor rdf:type owl:Class ;
+           rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> ;
+           rdfs:label "CO2 Sensor"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#KNXConfiguration
+:KNXConfiguration rdf:type owl:Class ;
+                  rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> ;
+                  rdfs:label "KNX Configuration"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#LoRaConfiguration
+:LoRaConfiguration rdf:type owl:Class ;
+                   rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> ;
+                   rdfs:label "LoRa configuration"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#MBusConfiguration
+:MBusConfiguration rdf:type owl:Class ;
+                   rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> ;
+                   rdfs:label "MBus configuration"^^xsd:string .
+
+
+###  http://karlhammar.com/ontologies/2018/rec-demo/device.ttl#TemperatureSensor
+:TemperatureSensor rdf:type owl:Class ;
+                   rdfs:subClassOf <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> ;
+                   rdfs:label "Temperature sensor"^^xsd:string .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

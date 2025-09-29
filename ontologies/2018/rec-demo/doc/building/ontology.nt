@@ -1,0 +1,192 @@
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> <http://www.w3.org/2002/07/owl#versionIRI> <http://karlhammar.com/ontologies/2018/rec-demo/1.0/building.ttl> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> <http://www.w3.org/2002/07/owl#imports> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the optional RealEstateCore Building module, listing notions that are common in the building field but which are not generic enough to be included in RealEstateCore itself." .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> <http://www.w3.org/2000/01/rdf-schema#label> "REC Building Module" .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> <http://www.w3.org/2002/07/owl#versionInfo> "Created with TopBraid Composer" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to real estate" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> <http://www.w3.org/2002/07/owl#inverseOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom> <http://www.w3.org/2000/01/rdf-schema#label> "device located in room" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has building structure component" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "has device configuration" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> <http://www.w3.org/2000/01/rdf-schema#label> "makes observation" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy> <http://www.w3.org/2000/01/rdf-schema#label> "observation made by" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice> <http://www.w3.org/2000/01/rdf-schema#label> "room has device" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium> <http://www.w3.org/2000/01/rdf-schema#label> "Atrium" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium> <http://www.w3.org/2000/01/rdf-schema#label> "Auditorium" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice> <http://www.w3.org/2000/01/rdf-schema#label> "Back office" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom> <http://www.w3.org/2000/01/rdf-schema#label> "Bathroom" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema> <http://www.w3.org/2000/01/rdf-schema#label> "Cinema" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom> <http://www.w3.org/2000/01/rdf-schema#label> "Cleaning room" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> .
+<http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom> <http://www.w3.org/2000/01/rdf-schema#label> "Cloak room" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator is a component that is responsible for moving and controlling a mechanism or system." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "The human or machine that consumes or acts upon an object or data." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Confined building structure." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Building structure" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "The parts that makes up a building structure (BuildingStructure). E.g. Room, Facade, Roof, etc." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Building structure component" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A thing made or adapted for a particular purpose, specifically a piece of electronic equipment. A Device has one or more Sensor(s) and/or Actuator(s)." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "A configuration for a device. What this specifically entails in terms of properties and classes is left to implementers and submodule designers to define. The REC module Device (http://karlhammar.com/ontologies/2018/rec-demo/device.ttl) provides a common set of standard configurations." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "Device configuration" .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://karlhammar.com/ontologies/2018/rec-demo/device.ttl> .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade> <http://www.w3.org/2000/01/rdf-schema#label> "Facade" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land> <http://www.w3.org/2000/01/rdf-schema#comment> "The land where one or more buildings are situated." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land> <http://www.w3.org/2000/01/rdf-schema#label> "Land" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation of a phenomena. Made by a Sensor. Has a Value." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal entity. Land + buildings." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate> <http://www.w3.org/2000/01/rdf-schema#label> "Real estate" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof> <http://www.w3.org/2000/01/rdf-schema#label> "Roof" .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> <http://www.w3.org/2000/01/rdf-schema#comment> "Confined space by walls or other line of separation. The REC module Building (http://karlhammar.com/ontologies/2018/rec-demo/building.ttl) provides a set of common room types." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> <http://www.w3.org/2000/01/rdf-schema#label> "Room" .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://karlhammar.com/ontologies/2018/rec-demo/building.ttl> .
+# 
+# http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device> .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Thing which detects or measures a physical property and records, indicates, or otherwise responds to it." .
+<http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

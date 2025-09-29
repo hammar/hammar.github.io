@@ -1,0 +1,606 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl", "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl" ],
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "version" : "Created with TopBraid Composer",
+    "labels" : {
+      "undefined" : "REC Building Module"
+    },
+    "comments" : {
+      "undefined" : "This is the optional RealEstateCore Building module, listing notions that are common in the building field but which are not generic enough to be included in RealEstateCore itself."
+    },
+    "other" : {
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "Created with TopBraid Composer",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 21,
+    "objectPropertyCount" : 7,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Bathroom",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bathroom",
+      "undefined" : "Bathroom"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Land",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land",
+      "undefined" : "Land"
+    },
+    "comment" : {
+      "undefined" : "The land where one or more buildings are situated."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Cinema",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cinema",
+      "undefined" : "Cinema"
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#RealEstate",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RealEstate",
+      "undefined" : "Real estate"
+    },
+    "subClasses" : [ "8", "5" ],
+    "comment" : {
+      "undefined" : "Legal entity. Land + buildings."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Sensor",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor",
+      "undefined" : "Sensor"
+    },
+    "comment" : {
+      "undefined" : "Thing which detects or measures a physical property and records, indicates, or otherwise responds to it."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Device",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "subClasses" : [ "9", "13" ],
+    "comment" : {
+      "undefined" : "A thing made or adapted for a particular purpose, specifically a piece of electronic equipment. A Device has one or more Sensor(s) and/or Actuator(s)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Auditorium",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Auditorium",
+      "undefined" : "Auditorium"
+    },
+    "id" : "20",
+    "superClasses" : [ "4" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "5" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CleaningRoom",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CleaningRoom",
+      "undefined" : "Cleaning room"
+    },
+    "id" : "17",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#BackOffice",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BackOffice",
+      "undefined" : "Back office"
+    },
+    "id" : "19",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#Atrium",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Atrium",
+      "undefined" : "Atrium"
+    },
+    "id" : "22",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Roof",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Roof",
+      "undefined" : "Roof"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructure",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingStructure",
+      "undefined" : "Building structure"
+    },
+    "comment" : {
+      "undefined" : "Confined building structure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Room",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Room",
+      "undefined" : "Room"
+    },
+    "subClasses" : [ "3", "7", "17", "19", "22", "32", "20" ],
+    "comment" : {
+      "undefined" : "Confined space by walls or other line of separation. The REC module Building (http://karlhammar.com/ontologies/2018/rec-demo/building.ttl) provides a set of common room types."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Actuator",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actuator",
+      "undefined" : "Actuator"
+    },
+    "comment" : {
+      "undefined" : "An actuator is a component that is responsible for moving and controlling a mechanism or system."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Observation",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Observation",
+      "undefined" : "Observation"
+    },
+    "comment" : {
+      "undefined" : "Observation of a phenomena. Made by a Sensor. Has a Value."
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#BuildingStructureComponent",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingStructureComponent",
+      "undefined" : "Building structure component"
+    },
+    "subClasses" : [ "30", "4", "34" ],
+    "comment" : {
+      "undefined" : "The parts that makes up a building structure (BuildingStructure). E.g. Room, Facade, Roof, etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl#CloakRoom",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/building.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CloakRoom",
+      "undefined" : "Cloak room"
+    },
+    "id" : "32",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Agent",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "comment" : {
+      "undefined" : "The human or machine that consumes or acts upon an object or data."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#DeviceConfiguration",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/device.ttl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/device.ttl",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/device.ttl",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://karlhammar.com/ontologies/2018/rec-demo/device.ttl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DeviceConfiguration",
+      "undefined" : "Device configuration"
+    },
+    "comment" : {
+      "undefined" : "A configuration for a device. What this specifically entails in terms of properties and classes is left to implementers and submodule designers to define. The REC module Device (http://karlhammar.com/ontologies/2018/rec-demo/device.ttl) provides a common set of standard configurations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#Facade",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Facade",
+      "undefined" : "Facade"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "24" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasDeviceConfiguration",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasDeviceConfiguration",
+      "undefined" : "has device configuration"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "4",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "4",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#hasBuildingStructureComponent",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasBuildingStructureComponent",
+      "undefined" : "has building structure component"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#makesObservation",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "makesObservation",
+      "undefined" : "makes observation"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#roomHasDevice",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "roomHasDevice",
+      "undefined" : "room has device"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#observationMadeBy",
+    "inverse" : "26",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "observationMadeBy",
+      "undefined" : "observation made by"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#belongsToRealEstate",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "belongsToRealEstate",
+      "undefined" : "belongs to real estate"
+    },
+    "domain" : "25",
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl#deviceLocatedInRoom",
+    "inverse" : "29",
+    "baseIri" : "http://karlhammar.com/ontologies/2018/rec-demo/core.ttl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "deviceLocatedInRoom",
+      "undefined" : "device located in room"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "24",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "24",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "4",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "24",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  } ]
+}
