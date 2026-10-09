@@ -9,25 +9,10 @@
 title: Hammar.dev
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hammar.dev" # the base hostname & protocol for your site
+repository: hammar/hammar.github.io
 
 # Build settings
 markdown: kramdown
-
-# Plugins
-plugins: ['jekyll/scholar']
-
-# Jekyll-scholar configuration
-scholar:
-  sort_by: year
-  order: descending
-  type_names: { proceedings: Edited Proceedings }
-  group_by: type
-  type_order: [thesis, article, incollection, inproceedings, proceedings]
-  group_order: ascending
-  bibliography_template: bib
-  bibliography: bibliography.bib
-  bibliography_list_tag: ul
-  repository: "downloads"
 
 exclude:
   - README.md
@@ -38,3 +23,12 @@ exclude:
   - "*.Rmd"
   - vendor
   - .gitignore
+
+# Disable GitHub Pages defaults that would otherwise alter the generated output
+theme: null
+sass:
+  style: compact
+relative_links:
+  enabled: false
+titles_from_headings:
+  enabled: false
