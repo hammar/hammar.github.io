@@ -1,6 +1,6 @@
 {
 	"name": "Jekyll",
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2.7-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/jekyll:3.3-bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "lts"
